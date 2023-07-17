@@ -1,0 +1,148 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-style: inherit;
+    background-size: 120%;
+    background-image: url(../imagens/raizes.png);
+  }
+  
+  
+h1{
+    color:brown;
+    font-size:x-large ;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;;
+    margin: 50px;
+    padding-left: 140px;
+}
+
+h2{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color:rebeccapurple ;
+
+}
+
+.menu{
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+    font-weight: bold;
+    }
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+
+}
+
+
+.menu li a{
+    color:#333; 
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+
+}
+
+.submenu {
+    list-style:none;
+    display:block;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    padding: 0; 
+    margin: 0; 
+    
+}
+
+.submenu li {
+    border: none;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.submenu li a {
+    padding: 5px 20px;
+    
+}
+
+.submenu li a:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.produto {
+
+    padding: 80px;
+    margin-bottom: auto;
+    position: relative;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  .addcarrinho, .comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .addcarrinho:hover, .comprar:hover {
+    background-color: #45a049;
+  }
+  
+  .comprar {
+    background-color: #f44336;
+    margin-left: 10px;
+  }
+  
+  .comprar:hover {
+    background-color: #d32f2f;
+  }
+  
+  .florverde {
+
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  .botao {
+
+    position: absolute;
+    bottom: 0;
+
+  }
+
+  p {
+
+    margin-left: 15px;
+
+  }
+
+  .produto2 {
+
+    padding: 80px;
+    margin-bottom: auto;
+    position: relative;
+    float: inherit;
+  }

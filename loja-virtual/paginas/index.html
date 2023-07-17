@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Loja Virtual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="../imagens/iconecarnivora.png" type="image/x-icon">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+  
+  
+<nav>
+
+  <ul class="menu">
+    <li><a href="lojaonline.html">Home</a></li>
+    <li><a href="#" class="dropdown">Clientes</a>
+        <ul class="menu submenu">
+            <li><a href="clientes.html">Seus dados</a></li>
+        </ul>
+    </li>
+    <li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+
+<h1>Minha Loja Virtual</h1>
+
+<br>
+<br>
+<hr>
+<br>
+
+
+<div class="produto">
+  <img src="../imagens/florverde.jpg" alt="florverde" class="florverde">
+  <p>Apenas uma linda flor verde para você.</p>
+   <div>
+    <button class="addcarrinho">Adicionar ao Carrinho</button>
+    <button class="comprar">Pegar</button>
+   </div>
+</div>
+
+<div class="produto2">
+  <img src="../imagens/florverde.jpg" alt="florverde" class="florverde">
+  <p>Apenas uma linda flor verde para você.</p>
+   <div>
+    <button class="addcarrinho">Adicionar ao Carrinho</button>
+    <button class="comprar">Pegar</button>
+   </div>
+</div>
+
+<div class="produto3">
+  <img src="../imagens/florverde.jpg" alt="florverde" class="florverde">
+  <p>Apenas uma linda flor verde para você.</p>
+   <div>
+    <button class="addcarrinho">Adicionar ao Carrinho</button>
+    <button class="comprar">Pegar</button>
+   </div>
+</div>
+
+<script>
+
+$(document).ready(function() {
+  $('.dropdown').click(function() {
+    $(this).find('.submenu').toggle();
+  });
+});
+
+</script>
+</body>
+</html>
