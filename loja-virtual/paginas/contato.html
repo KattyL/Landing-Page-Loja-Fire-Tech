@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Loja Virtual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="../imagens/iconecarnivora.png" type="image/x-icon">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+  
+  
+<nav>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#" class="dropdown">Clientes</a>
+        <ul class="menu submenu">
+            <li><a href="clientes.html">Seus dados</a></li>
+        </ul>
+    </li>
+    <li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+
+<br>
+<br>
+<hr>
+<br>
+
+<div class="contato">
+    <h1 class="paginacontato">Entre em contato</h1>
+
+    <h2>Endereço:</h2>
+    <p>Rua das Flores 1001<br>
+    Cidade Florida<br>
+    Florânda<br>
+    CEP: 12345-678</p>
+  
+    <h2>Telefone:</h2>
+    <p>(00) 1234-5678</p>
+  
+    <h2>E-mail:</h2>
+    <p><a href="mailto:contato@exemplo.com">contato@flores.com</a></p>
+  
+    <h2>Redes Sociais:</h2>
+    <ul>
+      <li><a href="https://www.facebook.com">Facebook</a></li>
+      <li><a href="https://www.twitter.com">Twitter</a></li>
+      <li><a href="https://www.instagram.com">Instagram</a></li>
+    </ul>
+  
+    <h2>Formulário de Contato:</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br>
+  
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br>
+  
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+  
+      <input type="submit" value="Enviar">
+    </form>
+  
+
+</div>
+
+<script>
+
+$(document).ready(function() {
+  $('.dropdown').click(function() {
+    $('.submenu').toggle();
+  });
+});
+
+</script>
+<footer class="contatoo">
+    <h2>Horário de Atendimento:</h2>
+  
+    <p>Caso tenha alguma dúvida ou sugestão, entre em contato por <a href="contato.html">este link</a>. Estamos ansiosos para ouvir de você!</p>
+    <p>Nosso horário de atendimento é de segunda a sexta-feira, das 7h às 23h. Faremos o possível para responder às suas perguntas e solicitações o mais rápido possível.</p>
+  
+  </footer>
+</body>
+</html>

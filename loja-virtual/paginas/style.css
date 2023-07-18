@@ -189,3 +189,57 @@ h2{
     display: flex;
     position: absolute;
   }
+
+  .contato {
+    margin-left: 110px;
+    display:grid ;
+    margin-bottom: 200px;
+
+  }
+
+  .paginacontato {
+
+    color:brown;
+    font-size:x-large ;
+    text-align: center;
+    font-size: 35px;
+    font-style:normal;
+    font-family:'Flower';
+    src: url(../fonte/Flower.ttf) format(truetype);
+    font-size: 60px;
+    float: left;;
+    margin: 50px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: -180px;
+  }
+
+  footer {
+    position: unset;
+    margin-top: 500px;
+    background-color: #cc6767ad;
+    border-color: beige;
+    border-style: double;
+    padding: 30px;
+  }
+
+  .clientt {
+    position: unset;
+    margin-top: 100px;
+    background-color: #cc6767ad;
+    border-color: beige;
+    border-style: double;
+    padding: 30px;
+
+  }
+
+  .contatoo {
+
+    position: unset;
+    margin-top: -100px;
+    background-color: #cc6767ad;
+    border-color: beige;
+    border-style: double;
+    padding: 30px;
+
+  }
