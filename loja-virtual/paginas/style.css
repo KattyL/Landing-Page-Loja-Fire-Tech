@@ -2,6 +2,8 @@
 font-family:'Flower';
 src: url(../fonte/Flower.ttf) format(truetype);
 
+
+
 }
 body {
     font-family: arial, helvetica, sans-serif;
@@ -14,7 +16,31 @@ body {
 
   }
   
-  
+  .form10 {
+    position: relative;
+}
+
+.form10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imgcarnivora {
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  margin-left: -100px;
+  margin-bottom: -100px;
+ 
+}
+
+
 h1{
     color:brown;
     font-size:x-large ;
@@ -221,6 +247,7 @@ h2{
     border-color: beige;
     border-style: double;
     padding: 30px;
+
   }
 
   .clientt {
