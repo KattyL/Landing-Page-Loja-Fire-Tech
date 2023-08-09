@@ -13,8 +13,14 @@ body {
     background-size: cover;
     background-image: url(../imagens/raizes.png);
     background-position: left;
-
+    margin: 0;
   }
+
+  .navbar{
+    background-color: rgb(59, 2, 42);
+    color: aliceblue;
+    padding: 20px;
+    }
   
   .form10 {
     position: relative;
