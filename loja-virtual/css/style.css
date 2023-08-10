@@ -1,19 +1,39 @@
-@font-face{
+@font-face {
 font-family:'Flower';
 src: url(../fonte/Flower.ttf) format(truetype);
+}
 
+@media print {
+    body {
+    font-family: serif;
+    font-size: 1rem;
+    background-size: cover;
+    background-position: left;
+    margin: 0;
+    position: relative;
+    margin-top: 10vh;
+    }
 
+    a::after {
+
+      content: "(" attr(href) ") - (" attr(title) ")"; /* Essa propriedade permite que informações adicionais de links sejam exibidas em um link */
+      display: inline-block;
+      margin-left: .5em;
+
+    }
 
 }
+
+
 body {
     font-family: arial, helvetica, sans-serif;
-    font-size: 15px;
-    font-style: italic;
-    font-style: inherit;
+    font-size: 1rem;
     background-size: cover;
     background-image: url(../imagens/raizes.png);
     background-position: left;
     margin: 0;
+    position: relative;
+    margin-top: 10vh;
   }
 
   .navbar{
@@ -21,7 +41,18 @@ body {
     color: aliceblue;
     padding: 20px;
     }
-  
+
+.menu-sticky {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  background-color: #ff877c79;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-bottom:1.5vh double white ;
+}
+
   .form10 {
     position: relative;
 }
@@ -70,44 +101,48 @@ h2{
 
 .menu{
     list-style:none;
-    border:1px solid #c0c0c0;
-    float:left;
-    font-weight: bold;
     padding: 0; 
     margin: 0; 
-    }
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+      }
 
 .menu li{
-    position:relative;
-    float:left;
-    border-right:1px solid #c0c0c0;
 
+    text-align:center;
+    height: 100%;
+    width: 100%;
+    border:0.1vh solid rgb(255, 255, 255);
+    border-collapse: collapse;
+ 
 }
 
 
 .menu li a{
-    color:#333; 
+    color:#FFFFFF; 
     text-decoration:none;
-    padding:5px 10px;
-    display:block;
+    position: relative;
+    display: block;
+    font-size: 4vh;
+    margin-top: 2vh;
+    transition: transform 0.5s;
+    transform-origin:center;
 
 }
 
 .menu li a:hover{
-  background-color: #e0e0e059;
+  font-size: 150%;
+  transform: scale(1.5);
 
 }
 
-.submenu {
-    list-style:none;
-    display:none;
-    position: absolute;
-    background-color: #f9f9f900;
-    border: 1px solid #c0c0c0;
-    padding: 0; 
-    margin: 0; 
-    
+.menu li:hover {
+
+background-color: #e0e0e01f;
 }
+
 
 .submenu li {
     border: none;
@@ -120,17 +155,15 @@ h2{
     
 }
 
-.submenu li a:hover {
-    background-color: #e0e0e059;
-}
+/*.menu li:hover {
+  background-color: #e0e0e0; 
+}*/
+
 
 .dropdown {
     position: relative;
 }
 
-.dropdown:hover .submenu {
-    display:block;
-}
 
 .produto {
 
@@ -141,7 +174,7 @@ h2{
     border-style: double;
     border-radius: 10%;
     margin: 50px;
-    border-width: 7px;
+    border-width: 1.5vh;
   }
   
   h3 {
@@ -218,8 +251,13 @@ h2{
   }
 
   .container {
-    display: flex;
-    position: absolute;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+
   }
 
   .contato {
@@ -247,13 +285,21 @@ h2{
   }
 
   footer {
-    position: unset;
-    margin-top: 500px;
-    background-color: #cc6767ad;
+    width: 95%;
+    height: 100%;
+    margin-top: 100px;
+    background-color: #cc6767;
     border-color: beige;
     border-style: double;
     padding: 30px;
+    color: beige;
+    
 
+  }
+
+  footer a {
+
+    color: rgb(254, 212, 255);
   }
 
   .clientt {

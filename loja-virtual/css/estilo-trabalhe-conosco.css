@@ -4,6 +4,8 @@
     
     
     }
+
+
     body {
         font-family: arial, helvetica, sans-serif;
         font-size: 15px;
@@ -13,6 +15,18 @@
         background-image: url(../imagens/raizes.png);
         background-position: left;
         margin: 0;
+      }
+
+      .only-print {
+        font-family: serif;
+      }
+
+      a::after.only-print {
+
+        content: "(" attr(href) ") - (" attr(title) ")"; /* Essa propriedade permite que informações adicionais de links sejam exibidas em um link */
+        display: inline-block;
+        margin-left: .5em;
+
       }
     
       .navbar{
