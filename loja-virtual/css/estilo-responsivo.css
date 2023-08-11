@@ -1,0 +1,41 @@
+@media print {
+  body {
+  font-family: serif;
+  font-size: 1rem;
+  background-size: cover;
+  background-position: left;
+  margin: 0;
+  position: relative;
+  margin-top: 10vh;
+  }
+
+  a::after {
+
+    content: "(" attr(href) ") - (" attr(title) ")"; /* Essa propriedade permite que informações adicionais de links sejam exibidas em um link */
+    display: inline-block;
+    margin-left: .5em;
+
+  }
+
+}
+
+@media screen and (max-width: 50em) {
+  body { 
+    background-color: red;
+    width: 90%;
+   
+    display:inline;
+  }
+
+
+  .menu li a {
+    font-size: 1.3em;
+    
+  } 
+
+  .menu li a:hover {
+
+    font-size: 1.1em;
+    line-height: 1;
+  }
+}
