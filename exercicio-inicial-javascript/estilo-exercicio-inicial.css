@@ -14,25 +14,25 @@ body {
   }
 
   h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 1em;
   }
 
   button {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1em;
+    padding: 0.8em 1.2em;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 0.2em;
   }
 
   button:hover {
-    background-color: #0056b3;
+    background-color: #0a5db4;
   }
 
   #resultado {
-    margin-top: 20px;
+    margin-top: 1.2em;
     text-align: center;
+    
   }
