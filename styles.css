@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    column-count: 2;
+    
+}
+
+.nav-top {
+    position: absolute;
+    background-color: #232323;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.sobre {
+    border-bottom: 0.3em solid #f7731e;
+    background-color:#ffffff;
+    color: #f7731e;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative ;
+    left: 0;
+    top: 12%;
+    height: 6vh;
+    width: 100%;
+}
+.nav-mid {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    list-style-type: none;
+    top: 6vh;
+    
+}
+
+.nav-bot {
+    align-self: start;
+    
+}
+
+.logo img {
+    width: 100px;
+}
+
+.categorias {
+    list-style-type: none;
+}
+
+.acesso {
+    border-top: 0.3em solid #f7731e;
+    background-color:#ffffff;
+    color: #232323;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed ;
+    left: 0;
+    top: 18%;
+    height: 6vh;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-mid a {
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #232323;
+}
+
+
+section {
+    padding: 20px;
+}
+
+button.buy-button {
+    background-color: #f00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.buy-button:hover {
+    background-color: #ff5555;
+}
+
+.slides {
+    position:relative;
+    top: 20%;   
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
