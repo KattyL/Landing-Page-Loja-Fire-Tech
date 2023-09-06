@@ -18,16 +18,23 @@ header {
     
 }
 
-.nav-top {
+#nav-top {
     position: absolute;
     background-color: #232323;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     width: 100%;
+    z-index: 50;
     
 }
+
+#nav-top.hidden {
+    top: -90px;
+    z-index: -50;
+}
+
 .sobre {
     border-bottom: 0.3em solid #f7731e;
     background-color:#ffffff;
@@ -41,7 +48,7 @@ header {
     height: 6vh;
     width: 100%;
 }
-.nav-mid {
+#nav-mid {
     background-color: #232323;
     color: #ffffff;
     padding: 6vh;
@@ -56,32 +63,53 @@ header {
     
 }
 
-.nav-bot {
+#nav-mid.hidden {
+    top: -90px;
+    z-index: -50;
+
+}
+
+#nav-bot {
     align-self: start;
-    
-}
-
-.logo img {
-    width: 100px;
-}
-
-.categorias {
-    list-style-type: none;
-}
-
-.acesso {
     border-top: 0.3em solid #f7731e;
     background-color:#ffffff;
     color: #232323;
     display: flex;
     justify-content:center;
     align-items: center;
-    position: fixed ;
+    position: absolute ;
     left: 0;
     top: 18%;
     height: 6vh;
     width: 100%;
 }
+    
+
+#nav-bot.hidden {
+    top: -90px;
+    z-index: -50;
+}
+
+#nav-top.hidden {
+    top: -90px;
+    z-index: -50;
+
+}
+
+.logo img {
+    width: 8vh;
+}
+
+.logo img:nth-child(2) {
+    width: 5.6em;
+    margin-bottom:0.4em;
+}
+
+.categorias {
+    list-style-type: none;
+}
+
+
 
 nav li {
     display: inline;
@@ -116,7 +144,7 @@ button.buy-button:hover {
 
 .slides {
     position:relative;
-    top: 20%;   
+    margin-top: 10%;   
     max-width: 100%;
     overflow: hidden;
 }
@@ -126,7 +154,7 @@ button.buy-button:hover {
 }
 
 .slide img {
-    width: 100%;
+    width: 50%;
 }
 
 .fade {
@@ -141,4 +169,32 @@ button.buy-button:hover {
     100% {
         opacity: 1;
     }
+}
+
+.prev, .next {
+    background-color: #232323; 
+    color: #ffffff;
+    font-size: 20px; 
+    padding: 10px 15px;
+    border: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+
+}
+
+.prev:hover, .next:hover {
+    background-color:  #f7731e;
+
+}
+
+.prev{
+    left: 10px;
+
+}
+
+.next{
+    right: 10px; 
+
 }
