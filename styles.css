@@ -1,4 +1,6 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Teko:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -20,13 +23,18 @@ header {
 
 #nav-top {
     position: absolute;
-    background-color: #232323;
+    background-color: #23232300;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     width: 100%;
     z-index: 50;
+    transition: top 0.3s;
+    font-family: Teko;
+    font-weight: 200;
+    font-size: 4vh;
+
     
 }
 
@@ -36,8 +44,7 @@ header {
 }
 
 .sobre {
-    border-bottom: 0.3em solid #f7731e;
-    background-color:#ffffff;
+    background-color:#ffffff02;
     color: #f7731e;
     display: flex;
     justify-content:center;
@@ -51,37 +58,48 @@ header {
 #nav-mid {
     background-color: #232323;
     color: #ffffff;
-    padding: 6vh;
+    padding: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     height: 6vh;
     width: 100%;
     list-style-type: none;
     top: 6vh;
+    z-index: 100;
+    transition: top 0.3s; 
+    border-bottom: 4px solid #f7731e;
+    font-family: Teko;
+    font-weight: 200;
+    font-size: 4vh;
     
 }
 
 #nav-mid.hidden {
-    top: -90px;
-    z-index: -50;
+    top:0;
+
 
 }
 
 #nav-bot {
     align-self: start;
     border-top: 0.3em solid #f7731e;
-    background-color:#ffffff;
-    color: #232323;
+    background-color: #2323230e;
+    color: #ffffff;
     display: flex;
     justify-content:center;
     align-items: center;
     position: absolute ;
     left: 0;
-    top: 18%;
+    top: 22%;
     height: 6vh;
     width: 100%;
+    transition: top 0.3s;
+    font-family: Teko;
+    font-weight: 200;
+    font-size: 4vh;
+
 }
     
 
@@ -116,18 +134,21 @@ nav li {
     margin-right: 20px;
 }
 
-.nav-mid a {
+#nav-mid a {
     color: #ffffff;
 }
 
 nav a {
     text-decoration: none;
-    color: #232323;
+    color: #ffffff;
 }
 
 
-section {
+.entrada {
     padding: 20px;
+    background-color: #232323;
+    background-image: linear-gradient(to top, rgba(247, 115, 30, 0.5) 20% , rgba(49, 168, 221, 0.00)60%, rgba(35, 35, 35, 0.7));
+    
 }
 
 button.buy-button {
@@ -144,17 +165,27 @@ button.buy-button:hover {
 
 .slides {
     position:relative;
-    margin-top: 10%;   
+    margin-top: 15%;   
     max-width: 100%;
     overflow: hidden;
+
 }
 
 .slide {
-    display: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-sizing: border-box; 
+
 }
 
 .slide img {
-    width: 50%;
+    
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+    border: 5px solid #1e4ef7;
+
 }
 
 .fade {
