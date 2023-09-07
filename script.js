@@ -27,8 +27,12 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block";
-}
 
+    let video = slides[slideIndex - 1].querySelector("video");
+    if (video) {
+        video.play();
+}
+}
 function nextSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -46,25 +50,5 @@ document.querySelector(".next").addEventListener("click", () => {
 
 //Esconder ao scrollar
 
-const navTop = document.getElementById("nav-top");
-const navBot = document.getElementById("nav-bot");
-const navMid = document.getElementById("nav-mid");
 
-const elementsToMonitor = [navTop, navBot, navMid];
-let prevScrollPos = window.pageYOffset;
 
-window.addEventListener("scroll", () => {
-    const currentScrollPos = window.pageYOffset;
-
-    elementsToMonitor.forEach(element => {
-        if (prevScrollPos > currentScrollPos) {
- 
-            element.classList.remove("hidden");
-        } else {
-            
-            element.classList.add("hidden");
-        }
-    });
-
-    prevScrollPos = currentScrollPos;
-});
