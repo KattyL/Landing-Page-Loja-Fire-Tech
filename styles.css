@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Teko:wght@300;400;500;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@400;700;900&family=Teko:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -308,8 +309,12 @@ button.buy-button:hover {
     display: flex;
     overflow: hidden;
     position: relative;
-    background-color: #555555;
+    background-color: #555555cc;
     height: 237.938px;
+}
+
+.slider-container p {
+    margin-top: 1px;
 }
 
 .video-slide {
@@ -351,16 +356,15 @@ video {
 .texto-video1 {
     display: flex;
     padding:30px;
-    padding-right: 600px;
-    background-color: #555555;
+    padding-right: 400px;
     position: absolute;
     height: 237.938px;
     width: 846px;
     margin-left: 422px;
-    font-family: Teko, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
@@ -384,24 +388,33 @@ video {
 }
 .texto-video2 {
     display: flex;
-    padding:30px;
-    background-color: #555555;
+    padding:30px 0 30px 30px;
     position: absolute;
     height: 237.938px;
     margin: 0 auto; 
-    font-family: Teko, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-decoration: none;
-    color: black;
     z-index: 1;
     margin-left: 400px;
     width: 400px;
 }
-.texto-video2 p {  
-    color: black;
-    margin-top:0;
-    
-    
+.texto-video2 .p-left {  
+    color: white;
+    margin-left: -830px;
+
+
+}
+
+.texto-video2 .p-right {
+    padding-left: 540px;
+    color: white;
+    width: 393;
+    margin-left: -140px;
+    margin-right: 50px;
+
+
+  
 }
 
 .texto-video2 a {
@@ -421,22 +434,20 @@ video {
 .texto-video3 {
     display: flex;
     padding:30px;
-    background-color: #555;
-    position: absolute;
     height: 237.938px;
-    width: 1400px;
-    font-family: Teko, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-decoration: none;
-    color: black;
-    left: 200px;
     float: left;
+    margin-left: -580px;
+    padding-right: 430px;
     
 }
 
+
 .texto-video3 p {
     position: static;
-    right:1400px;
+    color: white
 }
 
 .texto-video3 a {

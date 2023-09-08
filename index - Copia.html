@@ -92,25 +92,30 @@
         <img src="../Landing-page/assets/imagens/banner-transparente.png" alt="Cupom de 15% na primeira compra, frete grátis acima de 50,00, cobertura nacional">
     </section>
 
-    <div class="slider-container">
-        <div class="video-slide active">
-            <video src="assets/imagens/como-escolher-processador.mp4" autoplay muted loop></video>
-            <div class="texto-video1">
-                <p>Escolher um processador requer considerar orçamento, uso (jogos ou tarefas intensivas), compatibilidade com a placa-mãe, análises e necessidades futuras. <a href="https://www.techtudo.com.br/listas/2020/05/como-escolher-o-processador-ideal-veja-dicas-antes-de-comprar.ghtml"> Saiba mais</a></p>
-                <img src="assets/imagens/blaze.png" alt="logo FireTech">
-            </div>
-        </div>
-        <div class="video-slide">
-            <video src="assets/imagens/configurações.mp4" muted loop></video>
-            <div class="texto-video2">
-                <p class="p-left">A maioria dos periféricos modernos permite personalizar configurações, como a sensibilidade do mouse, o mapeamento de teclas e os atalhos.</p><p class="p-right"> Aproveite essas opções para ajustar os periféricos às suas preferências individuais. <a href="https://www.tecmundo.com.br/teclado/4384-aprenda-a-remapear-o-teclado-da-maneira-que-desejar.htm">  Saiba mais</a></p>
-            </div>
-        </div>
-        <div class="video-slide">
-            <video src="assets/imagens/ergonomia.mp4" muted loop></video>
-            <div class="texto-video3">
-                <p> Posicione seus periféricos de forma ergonômica para evitar desconforto e lesões. Use um suporte para laptop, um teclado ergonômico e um mouse com suporte para evitar tensões no pescoço, costas e punhos.<a href="https://www.tecmundo.com.br/busca?q=ergonomia&pagina=2">  Saiba mais</a></p>
-            </div>
+    <div id="video-container">
+        <video id="video-player" autoplay muted controls>
+            <source src="assets/imagens/video-teclado.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+    
+    <div>
+        <label for="video-selector">Selecione um vídeo:</label>
+        <select id="video-selector">
+            <option value="video1.mp4">Vídeo 1</option>
+            <option value="video2.mp4">Vídeo 2</option>
+            <option value="video3.mp4">Vídeo 3</option>
+        </select>
+    </div>
+
+    <div class="video-slide">
+        <button class="video-dialog-toggle">Mostrar/Esconder Vídeo</button>
+        <div class="video-dialog" style="display: none;">
+            <video controls>
+                <source src="assets/imagens/video-teclado.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Texto ao lado do vídeo de teclado.</p>
         </div>
     </div>
       

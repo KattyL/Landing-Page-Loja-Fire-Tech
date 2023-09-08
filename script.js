@@ -46,19 +46,23 @@ const slides = document.querySelectorAll('.video-slide');
 let currentSlide = 0;
 
 function playVideoInCurrentSlide() {
-    const videos = slides[currentSlide].querySelectorAll('video');
-    videos.forEach(video => {
+    const videoId = `video${currentSlide + 1}`;
+    const video = document.getElementById(videoId);
+
+    if (video) {
         video.play().catch(error => {
-            console.error('Erro ao reproduzir o vídeo:', error);
+            console.error(`Erro ao reproduzir o vídeo ${videoId}:`, error);
         });
-    });
+    }
 }
 
 function pauseVideoInCurrentSlide() {
-    const videos = slides[currentSlide].querySelectorAll('video');
-    videos.forEach(video => {
+    const videoId = `video${currentSlide + 1}`;
+    const video = document.getElementById(videoId);
+
+    if (video) {
         video.pause();
-    });
+    }
 }
 
 function goToNextSlide() {
@@ -71,8 +75,8 @@ function goToNextSlide() {
 
 playVideoInCurrentSlide();
 
+const slideInterval = setInterval(goToNextSlide, 12000);
 
-const slideInterval = setInterval(goToNextSlide, 1000); 
 
 //Função de texto ao lado dos videos
 
