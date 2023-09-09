@@ -29,6 +29,11 @@
 .main-loja {
     margin:0;
     padding: 0;
+    background-color: #3333339a;
+    height: 100%;
+    margin-bottom: -4.3vh;
+
+    
 }
 
 .menu-lateral {
@@ -74,6 +79,7 @@
     margin: 10px auto;
     border: none;
     border-radius: 5px;
+    text-align: center;
 }
 
 .submenu input[type="text"]:focus {
