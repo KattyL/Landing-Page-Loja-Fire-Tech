@@ -92,14 +92,20 @@
 }
 
 .item {
-    width: 180px;
+    width: 30%;
     margin: 40px;
     padding: 10px;
     border: 1px solid #4e4c4c;
     background-color: #363333;
     text-align: center;
-    margin-left: -4%;
+    margin-left: -13%;
+    margin-right: 15%;
 }
+
+a:hover {
+    text-decoration: underline;
+    cursor:pointer;
+ }
 
 .item img {
     max-width: 100%;

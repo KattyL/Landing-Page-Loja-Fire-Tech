@@ -58,7 +58,7 @@ function displayProducts() {
         productItem.appendChild(productName);
 
         const productPrice = document.createElement("p");
-        productPrice.textContent = `Preço: R$${product.price.toFixed(2)}`;
+        productPrice.textContent = `Preço: R$ ${product.price.toFixed(2)}`;
         productItem.appendChild(productPrice);
 
         const addToCartButton = document.createElement("button");
@@ -87,14 +87,14 @@ function updateCartInfo() {
     const totalPrice = cart.reduce((total, product) => total + product.price, 0);
 
     const cartInfo = document.querySelector(".cart-info");
-    cartInfo.textContent = `Total: $${totalPrice.toFixed(2)} (R${cart.length} itens)`;
+    cartInfo.textContent = `Total: R$ ${totalPrice.toFixed(2)} (${cart.length} itens)`;
 
     const cartList = document.querySelector(".cart-list");
     cartList.innerHTML = "";
 
     cart.forEach((product) => {
         const cartItem = document.createElement("div");
-        cartItem.textContent = `R${product.name} - R$${product.price.toFixed(2)}`;
+        cartItem.textContent = `${product.name} - R$ ${product.price.toFixed(2)}`;
         cartList.appendChild(cartItem);
     });
 }

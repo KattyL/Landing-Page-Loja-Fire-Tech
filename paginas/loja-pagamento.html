@@ -42,6 +42,31 @@
             cursor: pointer;
         }
 
+        .validade-container {
+        display: flex;
+        align-items: center;
+        }
+
+        #validade_mes, #validade_ano {
+                margin-left: 10px;
+        }
+
+        .endereco, .cep {
+        display: flex;
+        align-items: center;
+        }
+
+        #endereco, #cep, #cidade, #numero {
+                margin-left: 10px;
+        }
+
+        #endereco {
+            width: 400%;
+            margin-right:2% ;
+        }
+        #cep {
+            margin-right: 2%;
+        }
     </style>
 </head>
 <body>
@@ -52,25 +77,77 @@
         <form class="payment-form" action="#" method="post">
             <label for="nomeCompleto">Nome Completo:</label>
             <input type="text" id="nomeCompleto" name="nomeCompleto" required>
-
+            
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" required>
+            
             <label for="cpfCnpj">CPF/CNPJ:</label>
             <input type="text" id="cpfCnpj" name="cpfCnpj" required>
 
+            <div class="endereco">
+
+                <label for="endereco">Endereço:</label>
+                <input id="endereco" type="text" id="endereco" name="endereco" required>
+                
+                <label for="numero">Número:</label>
+                <input id="numero" type="text" id="numero" name="numero" required>
+
+            </div>
+
+            <div class="cep">
+
+                <label for="cep">CEP:</label>
+                <input id="cep" type="text" id="cep" name="cep" required>
+                
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" type="text" id="cidade" name="cidade" required>
+
+            </div>      
+
             <label for="formaPagamento">Forma de Pagamento:</label>
             <select id="formaPagamento" name="formaPagamento" required>
+
                 <option value="pix">PIX</option>
                 <option value="cartaoCredito">Cartão de Crédito</option>
                 <option value="cartaoDebito">Cartão de Débito</option>
+
             </select>
 
             <label for="numeroCartao">Número do Cartão:</label>
             <input type="text" id="numeroCartao" name="numeroCartao">
 
             <label for="validade">Validade:</label>
-            <input type="text" id="validade" name="validade">
+          <div class="validade-container">
+            <select id="validade-mes" name="validade-mes">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="validade_ano" name="validade_ano">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>   
+            </select>
+          
 
-            <label for="cvv">CVV:</label>
+            <label for="cvv"> CVV:</label>
             <input type="text" id="cvv" name="cvv">
+
+        </div>
 
             <label for="parcelamento">Parcelamento:</label>
             <select id="parcelamento" name="parcelamento">
@@ -81,7 +158,7 @@
         </form>
     </div>
     <footer>
-        <!-- Seu código de rodapé existente aqui -->
+        <p>&copy; 2023 FireTech E-commerce. Todos os direitos reservados.</p>
     </footer>
 
    <script>
@@ -96,6 +173,9 @@
         window.addEventListener("DOMContentLoaded", () => {
             updatePaymentPage();
         });
+
+
+        
    </script>
 
 </body>

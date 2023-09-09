@@ -24,7 +24,7 @@
             </div>
 
             <ul class="acesso">
-                <li><a href="../paginas/index.html">Início</a>
+                <li><a  href="../paginas/index.html">Início</a></li>
                 <li><a href="../paginas/contato.html">Contato</a></li>
                 <li><a href="../paginas/sobre.html">Sobre</a></li>
                 <li><a href="../paginas/conta.html">Minha Conta</a></li>
@@ -48,7 +48,7 @@
             <ul class="submenu">
                 <li><input type="text" placeholder="Pesquisar"></li>
                 <li><a href="../paginas/loja-home.html">Todos</a></li>
-                <li><a href="../paginas/loja-acessorio.html">Acessórios</a></li>
+                <li><a style="text-transform: uppercase; text-decoration: underline;" href="../paginas/loja-acessorio.html">Acessórios</a></li>
                 <li><a href="../paginas/loja-mouse.html">Mouses</a></li>
                 <li><a href="../paginas/loja-harware.html">Hardware</a></li>
                 <li><a href="../paginas/loja-cadeira.html">Cadeiras</a></li>
@@ -73,11 +73,6 @@ const products = [
     },
 
 
-    //lista de produtos
-
-    // Precisa arrumar o Total do carrinho para R$
-    //itens do varrinho - tirar o R
-    // tirar o R do nome dos itens
     // arrumar preço a receber dos itens
 
 ];
@@ -98,7 +93,7 @@ function displayProducts() {
         productItem.appendChild(productName);
 
         const productPrice = document.createElement("p");
-        productPrice.textContent = `Preço: R$${product.price.toFixed(2)}`;
+        productPrice.textContent = `Preço: R$ ${product.price.toFixed(2)}`;
         productItem.appendChild(productPrice);
 
         const addToCartButton = document.createElement("button");
@@ -127,14 +122,14 @@ function updateCartInfo() {
     const totalPrice = cart.reduce((total, product) => total + product.price, 0);
 
     const cartInfo = document.querySelector(".cart-info");
-    cartInfo.textContent = `Total: $${totalPrice.toFixed(2)} (R${cart.length} itens)`;
+    cartInfo.textContent = `Total: R$ ${totalPrice.toFixed(2)} (${cart.length} itens)`;
 
     const cartList = document.querySelector(".cart-list");
     cartList.innerHTML = "";
 
     cart.forEach((product) => {
         const cartItem = document.createElement("div");
-        cartItem.textContent = `R${product.name} - R$${product.price.toFixed(2)}`;
+        cartItem.textContent = `${product.name} - R$ ${product.price.toFixed(2)}`;
         cartList.appendChild(cartItem);
     });
 }
@@ -152,6 +147,19 @@ window.addEventListener("DOMContentLoaded", () => {
     clearCartButton.addEventListener("click", clearCart);
 });
 
+
+const checkoutButton = document.getElementById("checkout-button");
+
+checkoutButton.addEventListener("click", () => {
+    const paymentPageURL = "../paginas/loja-pagamento.html";
+
+    const popupWidth = 800;
+    const popupHeight = 600;
+    const left = (window.innerWidth - popupWidth) / 2;
+    const top = (window.innerHeight - popupHeight) / 2;
+
+    window.open(paymentPageURL, "Pagamento", `width=${popupWidth}, height=${popupHeight}, left=${left}, top=${top}`);
+});
 
     </script>
     </main>
