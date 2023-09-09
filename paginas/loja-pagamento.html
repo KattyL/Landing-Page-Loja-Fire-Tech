@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Produtos para Gamers</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/loja-home.css">
+    <link rel="stylesheet" href="../css/pop-up.css">
+    <link rel="icon" type="image/png" href="../imagens/blaze.png">
+
+    <style>
+
+        .payment-container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .payment-container h1 {
+            text-align: center;
+        }
+
+        .payment-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-form input[type="text"],
+        .payment-form input[type="number"],
+        .payment-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .payment-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="payment-container">
+        <h1>Página de Pagamento</h1>
+        <form class="payment-form" action="#" method="post">
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+            <label for="cpfCnpj">CPF/CNPJ:</label>
+            <input type="text" id="cpfCnpj" name="cpfCnpj" required>
+
+            <label for="formaPagamento">Forma de Pagamento:</label>
+            <select id="formaPagamento" name="formaPagamento" required>
+                <option value="pix">PIX</option>
+                <option value="cartaoCredito">Cartão de Crédito</option>
+                <option value="cartaoDebito">Cartão de Débito</option>
+            </select>
+
+            <label for="numeroCartao">Número do Cartão:</label>
+            <input type="text" id="numeroCartao" name="numeroCartao">
+
+            <label for="validade">Validade:</label>
+            <input type="text" id="validade" name="validade">
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv">
+
+            <label for="parcelamento">Parcelamento:</label>
+            <select id="parcelamento" name="parcelamento">
+                <option value="1x" id="valorCarrinho">1x - Valor do Carrinho</option>
+            </select>
+
+            <button type="submit">Finalizar</button>
+        </form>
+    </div>
+    <footer>
+        <!-- Seu código de rodapé existente aqui -->
+    </footer>
+
+   <script>
+        function updatePaymentPage() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const totalPrice = cart.reduce((total, product) => total + product.price, 0);
+
+            const valorCarrinho = document.getElementById("valorCarrinho");
+            valorCarrinho.textContent = `R$${totalPrice.toFixed(2)}`;
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            updatePaymentPage();
+        });
+   </script>
+
+</body>
+</html>

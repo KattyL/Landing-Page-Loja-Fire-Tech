@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Produtos para Gamers</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/loja-home.css">
+    <link rel="stylesheet" href="../css/pop-up.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../imagens/blaze.png">
+    
+</head>
+<body>
+
+    <header>
+
+        <nav id="nav-mid" class="nav-mid-loja">
+            <div class="logo">
+                <img src="../imagens/blaze.png" alt="Blaze">
+                <div class="Fire-tech">
+                    <img src="../imagens/firetech-letra.png" alt="Fire-tech">
+                </div>
+            </div>
+
+            <ul class="acesso">
+                <li><a href="../paginas/index.html">Início</a>
+                <li><a href="../paginas/contato.html">Contato</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li><a href="../paginas/conta.html">Minha Conta</a></li>
+                    <ul class="carrinho">
+                        <li class="cart">
+                            <h2>Carrinho</h2>
+                            <div class="cart-list">Nenhum item no carrinho</div>
+                            <div class="cart-info">Total: $0.00 (0 itens)</div>
+                            <button class="clear-cart-button">Limpar Carrinho</button>
+                            <button class="checkout-button">Comprar</button>
+                        </li>  
+                    </ul>
+            </ul> 
+
+
+
+    </header>
+    <main class="main main-loja">
+
+        <div class="menu-lateral">
+            <ul class="submenu">
+                <li><input type="text" placeholder="Pesquisar"></li>
+                <li><a href="../paginas/loja-home.html">Todos</a></li>
+                <li><a href="../paginas/loja-acessorio.html">Acessórios</a></li>
+                <li><a href="../paginas/loja-mouse.html">Mouses</a></li>
+                <li><a href="../paginas/loja-harware.html">Hardware</a></li>
+                <li><a href="../paginas/loja-cadeira.html">Cadeiras</a></li>
+                <li><a href="../paginas/loja-teclado.html">Teclados</a></li>
+                <li><a href="../paginas/loja-headset.html">Headset</a></li>
+            </ul>
+        </div>
+
+        <div class="lista" style="margin-bottom: 300px;">
+
+        </div>
+        
+    <script>
+        // função da loja
+
+const products = [
+
+{
+        name: "Cadeira Fire-Tech",
+        price: 900.00,
+        image: "../imagens/cadeira.png"
+    },
+
+
+    //lista de produtos
+
+    // Precisa arrumar o Total do carrinho para R$
+    //itens do varrinho - tirar o R
+    // tirar o R do nome dos itens
+    // arrumar preço a receber dos itens
+
+];
+
+function displayProducts() {
+    const productList = document.querySelector(".lista");
+
+    products.forEach((product, index) => {
+        const productItem = document.createElement("div");
+        productItem.classList.add("item");
+
+        const productImage = document.createElement("img");
+        productImage.src = product.image;
+        productItem.appendChild(productImage);
+
+        const productName = document.createElement("h3");
+        productName.textContent = product.name;
+        productItem.appendChild(productName);
+
+        const productPrice = document.createElement("p");
+        productPrice.textContent = `Preço: R$${product.price.toFixed(2)}`;
+        productItem.appendChild(productPrice);
+
+        const addToCartButton = document.createElement("button");
+        addToCartButton.textContent = "Adicionar ao Carrinho";
+        addToCartButton.addEventListener("click", () => addToCart(index));
+        productItem.appendChild(addToCartButton);
+
+        productList.appendChild(productItem);
+    });
+}
+
+document.querySelectorAll(".item button").forEach((button, index) => {
+    button.addEventListener("click", () => addToCart(index));
+});
+
+
+function addToCart(productIndex) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(products[productIndex]);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartInfo();
+}
+
+function updateCartInfo() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalPrice = cart.reduce((total, product) => total + product.price, 0);
+
+    const cartInfo = document.querySelector(".cart-info");
+    cartInfo.textContent = `Total: $${totalPrice.toFixed(2)} (R${cart.length} itens)`;
+
+    const cartList = document.querySelector(".cart-list");
+    cartList.innerHTML = "";
+
+    cart.forEach((product) => {
+        const cartItem = document.createElement("div");
+        cartItem.textContent = `R${product.name} - R$${product.price.toFixed(2)}`;
+        cartList.appendChild(cartItem);
+    });
+}
+
+function clearCart() {
+    localStorage.removeItem("cart");
+    updateCartInfo();
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    displayProducts();
+    updateCartInfo();
+
+    const clearCartButton = document.querySelector(".clear-cart-button");
+    clearCartButton.addEventListener("click", clearCart);
+});
+
+
+    </script>
+    </main>
+    
+    
+    
+    
+
+    <footer>
+        <div class="footer-container">
+ 
+            <div class="footer-social">
+                <ul>
+                    <li><img src="../imagens/facebook.png" alt="Facebook"><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001590%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwjOunBhB4EiwA94JWsDUAKF20HnQapnOXk8gQlbK4SRLOCM8SV9t2fOZXX-e8MuKiuw0KrBoCJ48QAvD_BwE"><i class="facebook"></i> Facebook</a></li>
+                    <li><img src="../imagens/twitter.png" alt="Twitter"><a href="https://twitter.com/?lang=en"><i class="twitter"></i> Twitter</a></li>
+                    <li><img src="../imagens/instagram.png" alt="Instagram"><a href="https://www.instagram.com/"><i class="instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>Endereço: Rua do Silício, 10 - Techlândia</p>
+                <p>Telefone: (34) 99888-1900</p>
+                <p>Email: katturync@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../paginas/index.html">Página Inicial</a></li>
+                    <li><a href="../paginas/loja-home.html">Produtos</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../paginas/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="../imagens/logo-parcial.png" alt="Fire Tech">
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FireTech E-commerce. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

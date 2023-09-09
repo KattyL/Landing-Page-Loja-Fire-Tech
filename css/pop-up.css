@@ -1,0 +1,133 @@
+
+.link-teclado,
+.link-cadeira,
+.link-acessorios,
+.link-mouse,
+.link-headsets,
+.link-cpu {
+    text-decoration: none;
+    color: #333;
+    position: relative; 
+    transition: transform 0.3s;
+}
+
+
+.link-acessorios::after {
+    content: "Acessórios"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+
+    
+}
+.link-cpu::after {
+    content: "Hardware"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+    
+}
+.link-headsets::after {
+    content: "Headsets"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+    
+}
+.link-mouse::after {
+    content: "Mouses"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+    
+}
+.link-cadeira::after {
+    content: "Cadeiras"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+    
+}
+.link-teclado::after {
+    content: "Teclados"; 
+    display: none; 
+    position: absolute;
+    background-color: #241f1f;
+    padding: 6px;
+    box-shadow: 2px 8px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;  
+    left: 0;
+    width: 80px; 
+    text-align: center;
+    color:white;
+    font-family: teko, Arial, Helvetica, sans-serif;
+    margin-top: -97px;
+    transform: scale(0.8);
+    
+}
+
+.link-teclado:hover,
+.link-cadeira:hover,
+.link-acessorios:hover,
+.link-mouse:hover,
+.link-headsets:hover,
+.link-cpu:hover {
+    transform: scale(0.9);
+}
+
+/* revela os pop-ups com o passar do mouse */
+
+.link-teclado:hover::after,
+.link-cadeira:hover::after,
+.link-acessorios:hover::after,
+.link-mouse:hover::after,
+.link-headsets:hover::after,
+.link-cpu:hover::after {
+    display: block; 
+    transform: scale(1.3);
+}
