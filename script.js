@@ -5,7 +5,8 @@ let slideIndex = 1;
 
 function showSlides(n) {
     let slides = document.querySelectorAll(".slide");
-    
+    console.log("slides: ", slides);
+    console.log("slides.length: ", slides.length);
     if (n > slides.length) {
         slideIndex = 1;
     }
@@ -22,13 +23,14 @@ function showSlides(n) {
     let video = slides[slideIndex - 1].querySelector("video");
     if (video) {
         video.play();
+    }
 }
-}
+
 function nextSlides(n) {
     showSlides(slideIndex += n);
 }
 
-showSlides(slideIndex);
+
 
 document.querySelector(".prev").addEventListener("click", () => {
     nextSlides(-1);
@@ -73,27 +75,29 @@ function goToNextSlide() {
     playVideoInCurrentSlide();
 }
 
-playVideoInCurrentSlide();
 
-const slideInterval = setInterval(goToNextSlide, 12000);
+const nextSlidesInterval = setInterval(function () { nextSlides(slideIndex) }, 3000);
+const slideInterval = setInterval(goToNextSlide, 3000);
+
 
 
 //Função de texto ao lado dos videos
 
 document.addEventListener('DOMContentLoaded', function () {
+    playVideoInCurrentSlide();
     var videoSlides = document.querySelectorAll('.video-slide');
 
-    videoSlides.forEach(function (slide) {
-        slide.addEventListener('click', function () {
-            var videoDialog = this.querySelector('.video-dialog');
-            if (videoDialog) {
-                if (videoDialog.style.display === 'block') {
-                    videoDialog.style.display = 'none';
-                } else {
-                    videoDialog.style.display = 'block';
-                }
-            }
-        });
-    });
+    // videoSlides.forEach(function (slide) {
+    //     slide.addEventListener('click', function () {
+    //         var videoDialog = this.querySelector('video');
+    //         if (videoDialog) {
+    //             if (videoDialog.style.display === 'block') {
+    //                 videoDialog.style.display = 'none';
+    //             } else {
+    //                 videoDialog.style.display = 'block';
+    //             }
+    //         }
+    //     });
+    // });
 });
 
