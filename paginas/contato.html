@@ -11,11 +11,93 @@
     <link rel="icon" type="image/png" href="../imagens/blaze.png">
     <style>
 
-        footer.footer-contato{
-            display: flex;
-            
+.contato-container {
+    align-self: center;
+    flex: 1;
+    width: 50%;
 
-        }
+}
+.contato-container img {
+    align-self: center;
+    flex: 1;
+    width: 4%;
+
+}
+
+
+
+  .main-contato h2 {
+    color:rgb(58, 58, 58);
+    text-align:center;
+    font-family:Teko, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-top: 4vh;
+  }
+
+  .main-contato p, a,li{
+    color: #303030;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .main-contato ul {
+    padding-bottom: 6vh;
+    display: grid;
+    margin-left: 40%;
+    
+    
+  }
+
+  .main-contato li {
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  .main-contato a{
+    text-decoration: none;
+  }
+
+  .main-contato {
+    width: 100%;
+    height: 100%;
+    background-color: #7a7a7a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-top: 10%;
+
+  }
+
+  .form-container {
+    text-align: center;
+    flex: 1;
+    width: 40%;
+    margin-top: -26%;
+    margin-right: 5%;
+  }
+   .form-container img {
+    width: 5%;
+    margin-top: 1%;
+    position: absolute;
+    display: flex;
+    opacity: 0.3;
+   }
+
+   .form-container form {
+    background-color: rgba(240, 248, 255, 0.048);
+    font-size: 18px;
+    color: #292929;
+   }
+
+   .form-container textarea {
+    padding: 20px;
+   }
+
+    
+
     </style>
 </head>
 <body>
@@ -37,10 +119,76 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <br>
-        <br>
-        <br>
+<main class="main-contato">
+<div class="contato-container">
+
+    <h2>Endereço:</h2>
+    <p>Rua do Silício, 10 - Techlândia</p>
+    <p>CEP: 010101-010</p>
+  
+    <h2>Telefone:</h2>
+    <p>(01) 0101-0101</p>
+  
+    <h2>E-mail:</h2>
+    <p><a href="mailto:firetechfic@loja.com">firetechfic@loja.com</a></p>
+  
+    <h2>Redes Sociais:</h2>
+    <ul>
+        <li><img src="../imagens/facebook.png" alt="Facebook"><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001590%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwjOunBhB4EiwA94JWsDUAKF20HnQapnOXk8gQlbK4SRLOCM8SV9t2fOZXX-e8MuKiuw0KrBoCJ48QAvD_BwE"><i class="facebook"></i> Facebook</a></li>
+        <li><img src="../imagens/twitter.png" alt="Twitter"><a href="https://twitter.com/?lang=en"><i class="twitter"></i> Twitter</a></li>
+        <li><img src="../imagens/instagram.png" alt="Instagram"><a href="https://www.instagram.com/"><i class="instagram"></i> Instagram</a></li>
+    </ul>
+</div>
+  <div class="form-container">
+    <img class="logo-form" src="../imagens/blaze.png" alt="Logo Fire-tech">
+    <h2>Formulário de Contato:</h2>
+    <form>
+      <fieldset>
+          <legend>Dados Pessoais</legend>
+          <table cellspacing="10">
+              <tr>
+                  <td>
+                      <label for="nome">Nome:</label>
+                  </td>
+                  <td align="left">
+                      <input type="text" name="nome">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label for="telefone">Telefone:</label>
+                  </td>
+                  <td align="left">
+                      <input type="text" name="telefone">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label for="email">E-mail:</label>
+                  </td>
+                  <td align="left">
+                      <input type="email" name="email">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label for="mensagem">Mensagem:</label>
+                  </td>
+                  <td align="left">
+                      <textarea name="mensagem" rows="4" cols="30"></textarea>
+                  </td>
+              </tr>
+          </table>
+      </fieldset>
+
+      <input type="submit">
+      <input type="reset" value="Limpar">
+  </form>
+  
+  
+
+</div>
+
     </main>    
         
     <script></script>
