@@ -1,0 +1,80 @@
+@media screen and (min-width: 1370px) and (max-width: 1930px) {
+
+.banner-principal {
+    width: 100%;
+}
+
+.banner-principal a {
+    margin-bottom: 17vh;
+    margin-left: -10px;
+}
+
+.banner-principal .main-img img {
+
+    width: 100%;
+
+}
+
+.display-container {
+    min-width: 800px;
+    left: 30vh;
+    top: 10vh
+
+}
+
+.display-container img {
+    min-width: 230px;
+    min-height: 230px;
+}
+
+.banner-flutuante {
+    width: 100%;
+}
+
+.banner-flutuante img {
+    width: 100%;
+    max-height: 12.4vh;
+}
+
+.slider-container {
+    top: 1.5vh;
+    max-width: 330vh;
+    max-height: 240px;
+}
+
+video {
+    max-width: 330vh;
+    max-height: 240px;
+}
+
+footer {
+    margin-top: 18.1px;
+}
+.footer-logo img {
+    bottom: 1.8%;
+    left: 25.5%;
+}
+
+#video2{
+    display: flex;
+    position: absolute;
+    right: 800px;
+}
+
+#video3{
+    display: flex;
+    position: absolute;
+    right: 1332px;
+}
+
+.texto-video2  {
+    display: flex;
+    position: absolute;
+    right:183px;
+}
+.texto-video3  {
+    display: flex;
+    position: absolute;
+    right:786px;
+}
+}
