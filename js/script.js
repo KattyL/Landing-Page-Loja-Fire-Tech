@@ -101,3 +101,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // });
 });
 
+function openPopup() {
+
+    var width = 400; 
+    var height = 300; 
+
+
+    var left = (window.innerWidth - width) / 2;
+    var top = (window.innerHeight - height) / 2;
+
+
+    var popup = window.open("paginas/assine.html", "_blank", "width=" + width + ", height=" + height + ", left=" + left + ", top=" + top);
+}
+
