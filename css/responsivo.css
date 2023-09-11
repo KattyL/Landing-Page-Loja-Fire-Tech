@@ -1,4 +1,986 @@
-@media screen and (min-width: 1370px) and (max-width: 1930px) {
+
+
+@media screen and (min-width: 319px) and (max-width: 359px) {
+
+    main {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footer-logo img {
+        display:none!important;
+        
+    }
+
+    #nav-mid li {
+        margin-right: 4%!important;
+
+    }
+
+    #nav-mid img {
+        display: flex;
+        position: absolute;
+        width: 18%!important;
+        margin-left: -3.77vh!important;
+        z-index: 8;
+        opacity: 0.4;
+    }
+
+    .Fire-tech img {
+        display: none!important;
+    }
+
+    .acesso {
+        margin-left: -2%!important;
+        min-width: 700px!important;
+        z-index: 10;
+    }
+
+    .banner-principal {
+        position: relative; 
+        overflow: hidden; 
+    }
+    .banner-principal::after {
+        content: url("../imagens/main-banner320.png"); 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+        padding-top: 26%!important;
+
+    }
+
+    .link-headsets {
+        display: none;
+    }
+
+    .link-cpu {
+        display: none;
+    }
+
+    .link-teclado {
+        display: none;
+    }
+    .link-cadeira {
+        display: none;
+    }
+    .link-acessorios {
+        display: none;
+    }
+    .link-mouse {
+        display: none;
+    }
+
+    .entrada img{
+        display: none;
+
+    }
+    .entrada::after {
+        content: url("../imagens/assine320.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+
+    }
+
+    .banner-principal img {
+        display: none!important; 
+        transform: translateX(120px)!important;
+        background-size: cover!important;
+        
+    }
+
+    .display-container {
+        margin-left: 18px!important;
+        margin-top: 135%!important;
+        max-width: 414px!important;
+        
+        
+    }
+
+    .slider-container {
+        display: none!important;
+    }
+
+
+    .banner-flutuante {
+        position: relative!important;
+    }
+    .banner-flutuante::after {
+        content: url("../imagens/banner320.png")!important; 
+        display: block!important; 
+        max-width: 100%!important;
+        height: 100%!important; 
+        padding-bottom: 30px!important;
+        
+
+    }
+
+    .banner-flutuante img {
+        display: none!important; 
+        width: 100%!important;
+        
+    }
+    
+   
+
+
+
+
+
+    footer {
+        font-size: 23px!important;
+        margin-top:0px;
+
+    }
+    .footer-bottom {
+        font-size: 25px!important;
+    }
+
+    .footer-social {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 399px) {
+
+    main {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footer-logo img {
+        display:none!important;
+        
+    }
+
+    #nav-mid li {
+        margin-right: 5%!important;
+    }
+
+    #nav-mid img {
+        display: flex;
+        position: absolute;
+        width: 18%!important;
+        margin-left: -3.77vh!important;
+        z-index: 8;
+        opacity: 0.4;
+    }
+
+    .Fire-tech img {
+        display: none!important;
+    }
+
+    .acesso {
+        margin-left: -9%!important;
+        min-width: 700px!important;
+        z-index: 10;
+    }
+
+    .banner-principal {
+        position: relative; 
+        overflow: hidden; 
+    }
+    .banner-principal::after {
+        content: url("../imagens/main-banner375.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+        padding-top: 26%!important;
+
+    }
+
+    .link-headsets {
+        display: none;
+    }
+
+    .link-cpu {
+        display: none;
+    }
+
+    .link-teclado {
+        display: none;
+    }
+    .link-cadeira {
+        display: none;
+    }
+    .link-acessorios {
+        display: none;
+    }
+    .link-mouse {
+        display: none;
+    }
+
+    .entrada img{
+        display: none;
+
+    }
+    .entrada::after {
+        content: url("../imagens/assine375.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+
+    }
+
+    .banner-principal img {
+        display: none!important; 
+        transform: translateX(120px)!important;
+        background-size: cover!important;
+        
+    }
+
+    .display-container {
+        margin-left: 18px!important;
+        margin-top: 135%!important;
+        max-width: 414px!important;
+        
+        
+    }
+
+    .slider-container {
+        display: none!important;
+    }
+
+
+    .banner-flutuante {
+        position: relative!important;
+    }
+    .banner-flutuante::after {
+        content: url("../imagens/banner375.png")!important; 
+        display: block!important; 
+        max-width: 100%!important;
+        height: 100%!important; 
+        padding-bottom: 30px!important;
+        
+
+    }
+
+    .banner-flutuante img {
+        display: none!important; 
+        width: 100%!important;
+        
+    }
+    
+   
+
+
+
+
+
+    footer {
+        font-size: 23px!important;
+        margin-top:0px;
+
+    }
+    .footer-bottom {
+        font-size: 25px!important;
+    }
+
+    .footer-social {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 589px) {
+
+    main {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footer-logo img {
+        display:none!important;
+        
+    }
+
+    #nav-mid li {
+        margin-right: 2%!important;
+    }
+
+    #nav-mid img {
+        display: flex;
+        position: absolute;
+        width: 18%!important;
+        margin-left: -3.77vh!important;
+        z-index: 8;
+        opacity: 0.4;
+    }
+
+    .Fire-tech img {
+        display: none!important;
+    }
+
+    .acesso {
+        margin-left: -9%!important;
+        min-width: 700px!important;
+        z-index: 10;
+    }
+
+    .banner-principal {
+        position: relative; 
+        overflow: hidden; 
+    }
+    .banner-principal::after {
+        content: url("../imagens/main-banner414.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+        padding-top: 26%!important;
+
+    }
+
+    .link-headsets {
+        display: none;
+    }
+
+    .link-cpu {
+        display: none;
+    }
+
+
+    .entrada img{
+        display: none;
+
+    }
+    .entrada::after {
+        content: url("../imagens/assine375.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+
+    }
+
+    .banner-principal img {
+        display: none!important; 
+        transform: translateX(120px)!important;
+        background-size: cover!important;
+        
+    }
+
+    .display-container {
+        margin-left: 18px!important;
+        margin-top: 135%!important;
+        max-width: 414px!important;
+        
+        
+    }
+
+    .slider-container {
+        display: none!important;
+    }
+
+
+    .banner-flutuante {
+        position: relative!important;
+    }
+    .banner-flutuante::after {
+        content: url("../imagens/banner414.png")!important; 
+        display: block!important; 
+        max-width: 100%!important;
+        height: 100%!important; 
+        padding-bottom: 30px!important;
+        
+
+    }
+
+    .banner-flutuante img {
+        display: none!important; 
+        width: 100%!important;
+        
+    }
+    
+   
+
+
+
+
+
+    footer {
+        font-size: 23px!important;
+        margin-top:0px;
+
+    }
+    .footer-bottom {
+        font-size: 25px!important;
+    }
+
+    .footer-social {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 590px) and (max-width: 710px) {
+
+    main {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footer-logo img {
+        display:none!important;
+        
+    }
+
+    #nav-mid li {
+        margin-right: 6%!important;
+    }
+
+    #nav-mid img {
+        display: flex;
+        position: absolute;
+        width: 18%!important;
+        margin-left: -3.77vh!important;
+        z-index: 8;
+        opacity: 0.4;
+    }
+
+    .Fire-tech img {
+        display: none!important;
+    }
+
+    .acesso {
+        margin-left: -3%!important;
+        min-width: 700px!important;
+        z-index: 10;
+    }
+
+    .banner-principal {
+        position: relative; 
+        overflow: hidden; 
+    }
+    .banner-principal::after {
+        content: url("../imagens/main-banner600.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+        padding-top: 26%!important;
+
+    }
+
+    .link-headsets {
+        display: none;
+    }
+
+    .link-cpu {
+        display: none;
+    }
+
+    .entrada img{
+        display: none;
+
+    }
+    .entrada::after {
+        content: url("../imagens/assine600.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+
+    }
+
+    .banner-principal img {
+        display: none!important; 
+        transform: translateX(120px)!important;
+        background-size: cover!important;
+        
+    }
+
+    .display-container {
+        margin-left: 18px!important;
+        margin-top: 115%!important;
+        max-width: 780px!important;
+        
+        
+    }
+
+    .slider-container {
+        display: none!important;
+    }
+
+    .display-container img{
+        width: 220px!important;
+        height: 220px!important;
+        margin-bottom: 30px!important;
+    }
+
+    .banner-flutuante {
+        position: relative!important;
+    }
+    .banner-flutuante::after {
+        content: url("../imagens/banner600.png")!important; 
+        display: block!important; 
+        max-width: 100%!important;
+        height: 100%!important; 
+        
+
+    }
+
+    .banner-flutuante img {
+        display: none!important; 
+        width: 100%!important;
+        
+    }
+    
+   
+
+
+
+
+
+    footer {
+        font-size: 23px!important;
+
+    }
+    .footer-bottom {
+        font-size: 25px!important;
+    }
+
+    .footer-social {
+        margin-left:0px!important;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 749px) {
+
+    main {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footer-logo img {
+        display:none!important;
+        
+    }
+
+    #nav-mid img {
+        display: flex;
+        position: absolute;
+        width: 18%!important;
+        margin-left: -3.77vh!important;
+        z-index: 8;
+        opacity: 0.4;
+    }
+
+    .Fire-tech img {
+        display: none!important;
+    }
+
+    .acesso {
+        margin-left: -3%!important;
+        min-width: 700px!important;
+        z-index: 10;
+    }
+
+    .banner-principal {
+        position: relative; 
+        overflow: hidden; 
+    }
+    .banner-principal::after {
+        content: url("../imagens/main-banner720.png")!important; 
+        display: block!important; 
+        width: 100%!important;
+        height: 100%!important; 
+        padding-top: 26%!important;
+
+    }
+
+    .banner-principal img {
+        display: none!important; 
+        transform: translateX(120px)!important;
+        background-size: cover!important;
+        
+    }
+
+    .display-container {
+        margin-left: 18px!important;
+        margin-top: 115%!important;
+        max-width: 780px!important;
+        
+        
+    }
+
+    .display-container img{
+        width: 220px!important;
+        height: 220px!important;
+        margin-bottom: 30px!important;
+    }
+
+    .banner-flutuante {
+        position: relative!important;
+    }
+    .banner-flutuante::after {
+        content: url("../imagens/banner720.png")!important; 
+        display: block!important; 
+        max-width: 100%!important;
+        height: 100%!important; 
+        
+
+
+
+    }
+
+    .banner-flutuante img {
+        display: none!important; 
+        width: 100%!important;
+        
+    }
+    
+     .slider-container video {
+        display: flex!important;
+        position: absolute!important;
+        
+    } 
+
+     .slider-container {
+        
+        margin-top: 97px!important;
+
+    } 
+
+     #video1 {
+        display: flex!important;
+        position: absolute!important;
+
+    }
+
+     #video2 {
+        display: flex!important;
+        position: absolute!important;
+        margin-left: -292px!important;
+
+    }
+
+     #video3 {
+        display: flex!important;
+        position: absolute!important;
+        margin-left: -560px!important;
+
+
+    }
+
+    .texto-video1 {
+        display: flex!important;
+        position: absolute!important;
+        margin-left: 420px!important;
+        padding-top: 30px!important;
+        width: 380px!important;
+        padding: 0px!important;
+        font-size: 20px!important;
+    } 
+
+    .texto-video2 {
+        display: flex!important;
+        position: absolute!important;
+        margin-left: 138px!important;
+        padding-top: 30px!important;
+        width: 380px!important;
+        padding: 0px!important;
+        font-size: 20px!important;
+    }
+
+    .texto-video3 {
+        display: flex!important;
+        position: absolute!important;
+        margin-left: -128px!important;
+        padding-top: 30px!important;
+        width: 380px!important;
+        padding: 0px!important;
+        font-size: 20px!important;
+    }
+
+    footer {
+        font-size: 23px!important;
+
+    }
+    .footer-bottom {
+        font-size: 25px!important;
+    }
+
+    .footer-social {
+        margin-left:0px!important;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1022px)  {
+
+        main {
+            margin: 0!important;
+            padding: 0!important;
+        }
+        .footer-logo img {
+            display:none!important;
+            
+        }
+
+        #nav-mid img {
+            display: flex;
+            position: absolute;
+            width: 18%!important;
+            margin-left: -3.77vh!important;
+            z-index: 8;
+            opacity: 0.4;
+        }
+
+        .Fire-tech img {
+            display: none!important;
+        }
+
+        .acesso {
+            margin-left: -3%!important;
+            min-width: 700px!important;
+            z-index: 10;
+        }
+
+        .banner-principal::after {
+            content: url("../imagens/banner-principal-responsivo.png")!important; 
+            display: block!important; 
+            width: 100%!important;
+            height: 100%!important; 
+            padding-top: 30%;
+        }
+
+        .banner-principal img {
+            display: none!important; 
+            
+        }
+
+        .display-container {
+            margin-left: 18px!important;
+            margin-top: 115%!important;
+            max-width: 780px!important;
+            
+            
+        }
+
+        .display-container img{
+            width: 220px!important;
+            height: 220px!important;
+            margin-bottom: 30px!important;
+        }
+
+        .banner-flutuante::after {
+            content: url("../imagens/frete-responsivo.png")!important; 
+            display: block!important; 
+            width: 100%!important;
+            height: 100%!important; 
+
+        }
+
+        .banner-flutuante img {
+            display: none!important; 
+            
+        }
+        
+         .slider-container video {
+            display: flex!important;
+            position: absolute!important;
+            
+        } 
+
+         .slider-container {
+            
+            margin-top: 97px!important;
+
+        } 
+
+         #video1 {
+            display: flex!important;
+            position: absolute!important;
+
+        }
+
+         #video2 {
+            display: flex!important;
+            position: absolute!important;
+            margin-left: -292px!important;
+
+        }
+
+         #video3 {
+            display: flex!important;
+            position: absolute!important;
+            margin-left: -560px!important;
+
+
+        }
+
+        .texto-video1 {
+            display: flex!important;
+            position: absolute!important;
+            margin-left: 420px!important;
+            padding-top: 30px!important;
+            width: 380px!important;
+            padding: 0px!important;
+            font-size: 20px!important;
+        } 
+
+        .texto-video2 {
+            display: flex!important;
+            position: absolute!important;
+            margin-left: 138px!important;
+            padding-top: 30px!important;
+            width: 380px!important;
+            padding: 0px!important;
+            font-size: 20px!important;
+        }
+
+        .texto-video3 {
+            display: flex!important;
+            position: absolute!important;
+            margin-left: -128px!important;
+            padding-top: 30px!important;
+            width: 380px!important;
+            padding: 0px!important;
+            font-size: 20px!important;
+        }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1269px) {
+   
+   .banner-principal {
+   padding-top:10vh ;
+
+   }
+    main {
+        margin:0!important;
+        padding: 0!important;
+    }
+    #nav-mid {
+        max-height: 4vh;
+        padding: 2vh;
+    }
+
+    .acesso {
+        margin-left: 19% !important;
+    }
+
+    .footer-logo img {
+        right: 0%!important;
+        bottom: 2%;
+
+    }
+
+    .display-container {
+        margin-top: 25vh!important;
+        width: 470px;
+        right: 8vh;
+    }
+    .display-container img{
+        width: 128px!important;
+        height: 128px!important;
+    }
+
+    .slider-container {
+        margin-top: 0!important;
+    }
+
+    #video2 {
+        margin-left: -460px!important;
+    }
+
+}
+
+@media screen and (min-width: 1270px) and (max-width: 1365px) {
+
+    .main-img a {
+
+        margin-bottom:16.5vh;
+    }   
+
+    .footer-logo img {
+        right:0.1%;
+        bottom:0.5%
+    }
+
+    #video2 {
+        display:flex;
+        position:absolute;
+        margin-right:50px !important;
+    }
+
+}
+
+@media screen and (min-width: 1520px) and (max-width: 1700px) {
+
+
+    .banner-principal {
+        width: 100%;
+
+    }
+    
+    .banner-principal a {
+        margin-bottom: 17vh;
+        margin-left: -10px;
+    }
+    
+    .banner-principal .main-img img {
+    
+        width: 100%;
+    
+    }
+    
+    .display-container {
+        min-width: 700px;
+        left: 25vh;
+        top: 10vh;
+    
+    }
+    
+    .display-container img {
+        min-width: 188px;
+        min-height: 188px;
+        margin: 15px ;
+    }
+    
+    .banner-flutuante {
+        width: 100%;
+    }
+    
+    .banner-flutuante img {
+        width: 100%;
+        max-height: 12.4vh;
+    }
+    
+    .slider-container {
+        top: 1.5vh;
+        max-width: 330vh;
+        max-height: 240px;
+    }
+    
+    video {
+        max-width: 330vh;
+        max-height: 240px;
+    }
+    
+    footer {
+        margin-top: 18.1px;
+    }
+    .footer-logo img {
+        bottom: 1.8%;
+        left: 11.5%;
+    }
+    
+    #video2{
+        display: flex;
+        position: absolute;
+        right: 800px;
+    }
+    
+    #video3{
+        display: flex;
+        position: absolute;
+        right: 1332px;
+    }
+    
+    .texto-video2  {
+        display: flex;
+        position: absolute;
+        right:183px;
+    }
+    .texto-video3  {
+        display: flex;
+        position: absolute;
+        right:786px;
+    }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1930px) {
 
 .banner-principal {
     width: 100%;

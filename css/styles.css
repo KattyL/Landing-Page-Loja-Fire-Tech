@@ -217,14 +217,14 @@ button.buy-button:hover {
     z-index: 50;
     max-width: 540px;
     height: fit-content;
-    margin-left: 650px;
+    margin-left: 590px;
     margin-top: 110px;
 
 }
 
 .display-container img { 
-    width: 170px;
-    height: 170px;
+    width: 161px;
+    height: 161px;
     margin-bottom: 10px;
     margin-right: 10px
 }
