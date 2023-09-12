@@ -1,6 +1,25 @@
 
 
 @media screen and (min-width: 1620px) and (max-width:1950px) {
+
+    .main-loja {
+        margin-top: -5%!important;
+        padding-bottom: 6%!important;
+    }
+
+    #nav-mid ul {
+        margin-left:12%;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
     .sobre-texto {
         margin-top: 2%!important;
        }
@@ -33,6 +52,24 @@
 }
 
 @media screen and (min-width: 1367px) and (max-width:1619px) {
+
+    .main-loja {
+        padding-bottom: 6%!important;
+    }
+
+    #nav-mid ul {
+        margin-left:12%;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
     .sobre-texto {
         margin-top: 2%!important;
        }
@@ -67,6 +104,22 @@
 }
 
 @media screen and (min-width: 1257px) and (max-width:1300px) {
+
+
+
+    #nav-mid ul {
+        margin-left:12%;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
     .sobre-texto {
         margin-top: 2%!important;
        }
@@ -76,13 +129,17 @@
     .lista {
         display: flex;
         position: relative;
-        top: -400px;
+        top: -200px;
+        
     }
 
     .item {
-        transform: scale(1.3);
+        transform: scale(1.8);
         margin-left: 60px!important;
+
     }
+
+
 
     .footer-logo {
         display: none!important;
@@ -102,7 +159,7 @@
     }
 
     .cart {
-        right:0%!important;
+        left:100%!important;
     }
 
     footer {
@@ -151,19 +208,37 @@
     }
 }
 @media screen and (min-width: 1000px) and (max-width:1256px) {
+
+    .main-loja {
+        margin-top: -5%!important;
+        padding-bottom: 6%!important;
+    }
+
+    #nav-mid ul {
+        margin-left:22%!important;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
     .sobre-texto a {
         overflow-wrap: break-word;
        }
     .lista {
         display: flex;
         position: relative;
-        top: -300px;
-        left: 5%;
+        top: -50px;
     }
     .item {
         transform: scale(1.3);
         margin-left: 60px!important;
-        margin-top: 160px!important;
+
     }
 
     .footer-logo {
@@ -186,8 +261,8 @@
     }
 
     .cart {
-        right:-10%!important;
-        transform: scale(0.8);
+        right:-20%!important;
+        transform: scale(1.0);
     }
 
     footer {
@@ -223,7 +298,7 @@
             
         }
     .nav-mid-loja li {
-        margin-right:7%!important;
+        margin-right:9%!important;
         }
 
     fieldset {
@@ -236,6 +311,25 @@
     }
 }
 @media screen and (min-width: 780px) and (max-width:999px) {
+
+    .main-loja {
+        margin-top: -5%!important;
+        padding-bottom: 6%!important;
+    }
+
+    #nav-mid ul {
+        margin-left:12%;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 100px!important;
+        font-size: 20px!important;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
     .sobre-texto {
         margin-top: 20%!important;
        }
@@ -260,7 +354,7 @@
     .lista {
         display: flex;
         position: relative;
-        left: 10%;
+        left: 5%;
     }
 
     .item {
@@ -297,8 +391,8 @@
     }
 
     .cart {
-        right:-15%!important;
-        transform: scale(0.6);
+        right:-42%!important;
+        transform: scale(0.9);
     }
 
     footer {
@@ -364,6 +458,25 @@
     }
 }
 @media screen and (min-width: 750px) and (max-width:779px) {
+    .main-loja {
+        margin-top: -5%!important;
+        padding-bottom: 6%!important;
+    }
+
+    #nav-mid ul {
+        margin-left:12%;
+        font-size: 40px!important;
+    }
+
+    .cart button {
+        width: 120px!important;
+        font-size: 25px!important;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
+
     .sobre-texto {
         margin-top: 20%!important;
        }
@@ -425,7 +538,7 @@
     }
 
     .cart {
-        right:-15%!important;
+        right:-35%!important;
         transform: scale(0.6);
     }
 
@@ -550,8 +663,13 @@
     }
 
     .cart {
-        right:-15%!important;
-        transform: scale(0.6);
+        right:-45%!important;
+        transform: scale(0.7);
+    }
+
+    .cart button {
+        width: 100px!important;
+        font-size: 21px!important;
     }
 
     footer {
@@ -647,6 +765,7 @@
         transform: scale(2.9);
         margin-left: 1px!important;
         margin-top: 660px!important;
+        width: 120px!important;
     }
 
     input {
@@ -684,6 +803,12 @@
         right:-10%!important;
         transform: scale(0.7);
         font-size: 40px;
+        width: 400px!important;
+    }
+
+    .cart button {
+        width: 100px!important;
+        font-size: 21px!important;
     }
 
     footer {
@@ -747,6 +872,10 @@
 }
 @media screen and (min-width: 400px) and (max-width:597px) {
 
+    .main-loja {
+        padding-bottom:10%!important ;
+    }
+
     .logo {
         display: none!important;
     }
@@ -772,6 +901,7 @@
 
         width:550px;
         transform: scale(1.0);
+        margin-left:-55px!important;
    
             
         }
@@ -811,14 +941,14 @@
     .lista {
         display: flex;
         position: relative;
-        top: 230px!important;
-        left: 28%;
+        top: 330px!important;
+        left: 18%;
         margin-bottom: 130px!important;
     }
 
     .item {
 
-        width: 82%!important;
+        width: 100%!important;
         font-size: 20px;
 
     }
@@ -852,9 +982,16 @@
     }
 
     .cart {
-        right:-18%!important;
         transform: scale(0.5);
         font-size: 40px;
+        bottom: 10%!important;
+        right:10%!important;
+        width: 400px!important;
+    }
+
+    .cart button {
+        width: 100px!important;
+        font-size: 21px!important;
     }
 
     footer {
@@ -936,7 +1073,7 @@
     .lista {
         display: flex;
         position: relative;
-        top: 430px;
+        top: 290px;
         left: 21%;
         margin-bottom: 530px!important;
     }
@@ -977,10 +1114,15 @@
     }
 
     .cart {
-        right:-18%!important;
-        transform: scale(0.4);
+        transform: scale(0.8);
         font-size: 40px;
-        margin-top:-15%!important;
+        width: 500px!important;
+        left: 22%!important;
+
+    }
+    .cart button {
+        width: 100px!important;
+        font-size: 21px!important;
     }
 
     footer {

@@ -2,8 +2,20 @@
 
 @media screen and (min-width: 1620px) and (max-width:1950px) {
     
-    .lista {
-        margin-top:3%!important;
+
+    .footer-logo img {
+        display: none!important;
+    }
+
+    #nav-mid ul {
+
+    font-size: 40px;
+
+    }
+
+    .main-loja {
+        margin-top: -30px!important;
+        margin-bottom: 30px!important;
     }
 
     .footer-logo img {
@@ -22,7 +34,7 @@
 
     .menu-lateral {
         padding-bottom:10!important;
-        margin-top: 8%!important;
+        margin-top: 9%!important;
         text-align: center;
         
     }
@@ -41,12 +53,20 @@
     }
 
     .footer-logo img {
-
+        display: none!important;
         bottom:2%;
         left:26%;
         overflow: hidden;
 
     }
+    .footer-bottom {
+        font-size: 20px!important;
+    }
+
+   .acesso li {
+        font-size: 56px;
+
+   }
 
     .submenu li {
         margin-bottom: 16%;
@@ -68,10 +88,24 @@
 
 @media screen and (min-width: 1257px) and (max-width:1300px) {
     
+    #nav-mid ul {
+        margin-left: 20%!important;
+        font-size: 30px;
+    }
+
+    .main-loja {
+        margin-top: -67px!important;
+    }
+    
     .lista {
         display: flex;
         position: relative;
         top: -400px;
+        width: 800px!important;
+    }
+    
+    .item {
+        width: 198px!important;
     }
 
     .footer-logo {
@@ -85,27 +119,54 @@
         font-size: 24px;
     }
 
+
     .menu-lateral {
         padding-bottom:10!important;
-        margin-top: 8%!important;
+        margin-top: 12%!important;
         text-align: center;
         
     }
 
     .cart {
-        right:0%!important;
+        top: 50px !important;
+        left:73%!important;
+        transform: scale(1.1);
+    }
+
+    .cart button {
+        font-size: 24px;
+        width: 150px;
     }
 
     footer {
         font-size: 24px;
     }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
 }
 @media screen and (min-width: 1000px) and (max-width:1256px) {
+    
+
+    #nav-mid ul {
+        margin-left:20%;
+        font-size: 30px;
+    }
+
+    .footer-bottom {
+        font-size: 20px!important;
+    }
+
+    .cart button {
+        font-size: 20px;
+        width: 100px;
+    }
     
     .lista {
         display: flex;
         position: relative;
-        top: -300px;
+        top: -260px;
         left: 5%;
     }
 
@@ -127,7 +188,7 @@
 
     .menu-lateral {
         padding-bottom:0px!important;
-        margin-top: 8%!important;
+        margin-top: 9%!important;
         text-align: center;
         margin-bottom:-67%;
         
@@ -144,14 +205,18 @@
 }
 @media screen and (min-width: 780px) and (max-width:999px) {
     
+    .main-loja {
+        padding-bottom: 50%!important;
+    }
     .Fire-tech {
         display: none;
     }
     .lista {
         display: flex;
         position: relative;
-        top: -200px;
-        left: 10%;
+        top: 400px;
+        left: 7%;
+    
     }
 
     .item {
@@ -176,15 +241,20 @@
         position: fixed!important;
         height: 100%;
         padding-bottom:0px!important;
-        margin-top: 25%!important;
         text-align: center;
         margin-bottom:-67%;
+        margin-top: 21%!important;
         
     }
 
     .cart {
-        right:-15%!important;
-        transform: scale(0.6);
+        right:-10%!important;
+        transform: scale(0.9);
+        top: 70px!important;
+    }
+    .cart button {
+        font-size: 24px;
+        width: 150px;
     }
 
     footer {
@@ -202,6 +272,10 @@
     }
 }
 @media screen and (min-width: 750px) and (max-width:779px) {
+
+    .main-loja {
+        padding-bottom: 50%!important;
+    }
     
     .Fire-tech {
         display: none;
@@ -209,8 +283,8 @@
     .lista {
         display: flex;
         position: relative;
-        top: -200px;
-        left: 10%;
+        top: 300px;
+        left: 9%;
     }
 
     .item {
@@ -235,15 +309,21 @@
         position: fixed!important;
         height: 100%;
         padding-bottom:0px!important;
-        margin-top: 25%!important;
         text-align: center;
         margin-bottom:-67%;
+        margin-top: 20%!important;
         
     }
 
     .cart {
         right:-15%!important;
-        transform: scale(0.6);
+        transform: scale(0.73);
+
+    }
+
+    .cart button {
+        min-width: 150px!important;
+        font-size: 26px;
     }
 
     footer {
@@ -261,6 +341,9 @@
     }
 }
 @media screen and (min-width: 700px) and (max-width:749px) {
+    .main-loja {
+        padding-bottom: 50%!important;
+    }
     
     .Fire-tech {
         display: none;
@@ -268,8 +351,8 @@
     .lista {
         display: flex;
         position: relative;
-        top: -150px;
         left: 10%;
+        top:300px;
     }
 
     .item {
@@ -309,6 +392,12 @@
         transform: scale(0.6);
     }
 
+    .cart button {
+
+        width: 140px;
+        font-size: 23px;
+    }
+
     footer {
         font-size: 24px;
     }
@@ -328,15 +417,18 @@
     }
 }
 @media screen and (min-width: 598px) and (max-width:699px) {
+    .main-loja {
+        padding-bottom: 50%!important;
+    }
     
     .Fire-tech {
         display: none;
     }
     .lista {
         display: flex;
-        position: relative;
-        top: -100px;
-        left: 18%;
+        position: relative; 
+        top:300px;
+        left: 9.66%;
     }
 
     .item {
@@ -360,21 +452,28 @@
         font-size: 24px;
     }
 
-    .menu-lateral {
+    .main-loja div.menu-lateral {
         display: block;
         position: fixed!important;
         height: 100%;
         padding-bottom:0px!important;
-        margin-top: 25%!important;
+        transform: scale(0.8);
         text-align: center;
-        margin-bottom:-67%;
+        margin-left: -20px;
+
         
     }
 
-    .cart {
-        right:-18%!important;
-        transform: scale(0.5);
+    li.cart {
+        right:-14%!important;
+        transform: scale(0.7);
         font-size: 40px;
+    }
+
+    li.cart button {
+        width: 122px;
+        height: 40px;
+        font-size: 22px;
     }
 
     footer {
@@ -396,6 +495,9 @@
     }
 }
 @media screen and (min-width: 400px) and (max-width:597px) {
+    .main-loja {
+        padding-bottom: 80%!important;
+    }
     
     .Fire-tech {
         display: none;
@@ -443,17 +545,25 @@
         
     }
 
-    .cart {
-        right:-18%!important;
-        transform: scale(0.5);
+    .carrinho .cart {
+        right:-28%!important;
+        transform: scale(0.66);
         font-size: 40px;
+        width: 430px!important;
+        margin-top: 89px;
+    
+    }
+    .cart button {
+        width: 139px;
+        height: 35px;
+        font-size: 22px;
     }
 
     footer {
         font-size: 24px;
     }
     #nav-mid ul{
-        margin-left:-10%;
+        margin-left:-25%;
         width:550px;
         
 
@@ -466,18 +576,30 @@
     .footer-bottom {
         font-size: 23px!important;
     }
+    .logo {
+        display: none!important;
+    }
 }
 @media screen and (min-width: 300px) and (max-width:399px) {
-    
 
+    .main-loja {
+        padding-bottom: 80%!important;
+    }
     
+    #nav-mid ul {
+        margin-left: 0%!important;
+    }
+
+    .logo {
+    display: none!important;
+}
     .Fire-tech {
         display: none;
     }
     .lista {
         display: flex;
         position: relative;
-        top: 430px;
+        top: 340px;
         left: 21%;
         margin-bottom: 530px!important;
     }
@@ -509,30 +631,40 @@
         position: fixed!important;
         height: 100%;
         padding-bottom:0px!important;
-        margin-top: -12%!important;
         text-align: center;
         margin-bottom:-67%;
-        transform: scale(0.6);
+        transform: scale(0.8);
         margin-left: -50px;
         
     }
 
     .cart {
-        right:-18%!important;
-        transform: scale(0.4);
+        right:-38%!important;
+        transform: scale(0.6);
         font-size: 40px;
-        margin-top:-15%!important;
+        width: 450px!important;
+        top:10%!important;
+    }
+
+    .cart button{
+
+        width: 150px;
+        height: 40px;
+        font-size: 24px;
     }
 
     footer {
         font-size: 24px;
     }
     #nav-mid ul{
-        margin-left:-10%;
+        margin-left:-35%;
         width:550px;
+        font-size: 3.5vh;
         
 
     }
+
+    
 
     #nav-mid li {
         margin-right:7%;

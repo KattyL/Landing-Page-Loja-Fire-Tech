@@ -5,8 +5,7 @@ let slideIndex = 1;
 
 function showSlides(n) {
     let slides = document.querySelectorAll(".slide");
-    console.log("slides: ", slides);
-    console.log("slides.length: ", slides.length);
+
     if (n > slides.length) {
         slideIndex = 1;
     }
@@ -31,7 +30,6 @@ function nextSlides(n) {
 }
 
 
-
 document.querySelector(".prev").addEventListener("click", () => {
     nextSlides(-1);
 });
@@ -42,7 +40,6 @@ document.querySelector(".next").addEventListener("click", () => {
 
 
 //Funções para o Slide de videos
-
 
 const slides = document.querySelectorAll('.video-slide');
 let currentSlide = 0;
@@ -76,7 +73,7 @@ function goToNextSlide() {
 }
 
 
-const nextSlidesInterval = setInterval(function () { nextSlides(slideIndex) }, 3000);
+const nextSlidesInterval = setInterval(function () { nextSlides(1) }, 3000);
 const slideInterval = setInterval(goToNextSlide, 3000);
 
 
