@@ -73,8 +73,8 @@ function goToNextSlide() {
 }
 
 
-const nextSlidesInterval = setInterval(function () { nextSlides(1) }, 3000);
-const slideInterval = setInterval(goToNextSlide, 3000);
+const nextSlidesInterval = setInterval(function () { nextSlides(1) }, 5000);
+const slideInterval = setInterval(goToNextSlide, 12000);
 
 
 
