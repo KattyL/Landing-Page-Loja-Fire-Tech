@@ -304,6 +304,11 @@
 
 @media screen and (min-width: 400px) and (max-width: 589px) {
 
+
+    .logo img {
+        display: none!important;
+    }
+
     main {
         margin: 0!important;
         padding: 0!important;
@@ -315,11 +320,10 @@
 
 
     #nav-mid ul {
-        margin-left: 16%!important;
         font-size: 32px;
     }
     #nav-mid li {
-        margin-right: 2%!important;
+        margin-right: 2.5%!important;
     }
 
     #nav-mid img {
