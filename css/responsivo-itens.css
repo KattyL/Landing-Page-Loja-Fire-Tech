@@ -975,12 +975,15 @@
         padding-bottom:0px!important;
         text-align: center;
         margin-bottom:-67%;
-        transform: scale(0.6);
+        transform: scale(0.7)!important;
         margin-left: -50px;
-        margin-top:-50px!important;
+ 
         
     }
 
+    .main-contato img {
+        display: none!important;
+    }
     .cart {
         transform: scale(0.5);
         font-size: 40px;
