@@ -316,9 +316,10 @@
 
     #nav-mid ul {
         font-size: 32px;
+        margin-left: -19%!important;
     }
     #nav-mid li {
-        margin-right: 5.7%!important;
+        margin-right: 4.7%!important;
     }
 
     #nav-mid img {
