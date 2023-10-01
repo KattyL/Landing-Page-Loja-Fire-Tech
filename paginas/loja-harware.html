@@ -74,14 +74,14 @@ const products = [
         price: 2220.00,
         image: "../imagens/cpu.png" 
     },
+    {
+        name: "PC Gamer RGBA Fire-Tech",
+        price: 3320.00,
+        image: "../imagens/pcrgba.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
 
 
-    //lista de produtos
-
-    // Precisa arrumar o Total do carrinho para R$
-    //itens do varrinho - tirar o R
-    // tirar o R do nome dos itens
-    // arrumar preço a receber dos itens
 
 ];
 
@@ -92,9 +92,15 @@ function displayProducts() {
         const productItem = document.createElement("div");
         productItem.classList.add("item");
 
+        const productLink = document.createElement("a");
+        productLink.href = "pagina-detalhes-produto.html";
+
         const productImage = document.createElement("img");
         productImage.src = product.image;
         productItem.appendChild(productImage);
+
+        productLink.appendChild(productImage);
+        productItem.appendChild(productLink);
 
         const productName = document.createElement("h3");
         productName.textContent = product.name;

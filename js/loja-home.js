@@ -4,41 +4,79 @@ const products = [
     {
         name: "Cadeira Fire-Tech",
         price: 900.00,
-        image: "../imagens/cadeira.png"
+        image: "../imagens/cadeira.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
     {
         name: "Headset Fire-Tech",
         price: 180.00,
-        image: "../imagens/fone.png"
+        image: "../imagens/fone.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
     {
         name: "Teclado Fire-tech",
         price: 220.00,
-        image: "../imagens/teclado.png" 
+        image: "../imagens/teclado.png", 
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
     {
         name: "Mouse Fire-tech",
         price: 180.00,
-        image: "../imagens/mouse.png" 
+        image: "../imagens/mouse.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
     {
         name: "PC Gamer Fire-tech",
         price: 2220.00,
-        image: "../imagens/cpu.png" 
+        image: "../imagens/cpu.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
     {
         name: "Óculos VR Fire-tech",
         price: 220.00,
-        image: "../imagens/vr.png" 
+        image: "../imagens/vr.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
     },
-
+    {
+        name: "PC Gamer RGBA Fire-Tech",
+        price: 3320.00,
+        image: "../imagens/pcrgba.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    {
+        name: "Volante e pedal Fire-Tech",
+        price: 420.00,
+        image: "../imagens/volante.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    {
+        name: "Mouse Gamer Fire-Tech",
+        price: 220.00,
+        image: "../imagens/mouselaranja.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    {
+        name: "Teclado RGBA Fire-Tech",
+        price: 210.00,
+        image: "../imagens/teclado (2).png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    {
+        name: "Headset Ultra-Confort Fire-Tech",
+        price: 430.00,
+        image: "../imagens/headsetred.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    {
+        name: "Cadeira Gamer Azul Fire-Tech",
+        price: 1220.00,
+        image: "../imagens/cadeiraazul.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
+    
 
     //lista de produtos
 
-    // Precisa arrumar o Total do carrinho para R$
-    //itens do varrinho - tirar o R
-    // tirar o R do nome dos itens
-    // arrumar preço a receber dos itens
 
 ];
 
@@ -49,9 +87,16 @@ function displayProducts() {
         const productItem = document.createElement("div");
         productItem.classList.add("item");
 
+        const productLink = document.createElement("a");
+        productLink.setAttribute("data-product-link", product.productDetailLink);
+        productLink.href = product.productDetailLink;
+        
         const productImage = document.createElement("img");
         productImage.src = product.image;
         productItem.appendChild(productImage);
+
+        productLink.appendChild(productImage);
+        productItem.appendChild(productLink);
 
         const productName = document.createElement("h3");
         productName.textContent = product.name;
@@ -72,8 +117,23 @@ function displayProducts() {
 
 document.querySelectorAll(".item button").forEach((button, index) => {
     button.addEventListener("click", () => addToCart(index));
+
+
 });
 
+const productLinks = document.querySelectorAll(".item a[data-product-link]");
+productLinks.forEach((link) => {
+    link.addEventListener("click", handleProductClick);
+});
+
+function handleProductClick(event) {
+    event.preventDefault();
+
+    
+    const productLink = event.currentTarget.getAttribute("data-product-link");
+
+    window.location.href = productLink;
+}
 
 function addToCart(productIndex) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];

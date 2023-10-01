@@ -73,8 +73,6 @@
 
 
     .entrada #click-assine {
-        display: flex;
-        position: absolute;
         width: 100%!important;
         height: 100%!important;
     }
@@ -140,12 +138,13 @@
 
 
     footer {
-        font-size: 23px!important;
+        font-size: 16px!important;
         margin-top:0px;
+        text-align: center;
 
     }
     .footer-bottom {
-        font-size: 25px!important;
+        font-size: 14px!important;
     }
 
     .footer-social {
@@ -224,8 +223,6 @@
     }
 
     .entrada #click-assine {
-        display: flex;
-        position: absolute;
         width: 100%!important;
         height: 100%!important;
     }
@@ -282,19 +279,17 @@
         
     }
     
-   
-
-
 
 
 
     footer {
-        font-size: 23px!important;
+        font-size: 16px!important;
         margin-top:0px;
+        text-align: center;
 
     }
     .footer-bottom {
-        font-size: 25px!important;
+        font-size: 14px!important;
     }
 
     .footer-social {
@@ -323,7 +318,7 @@
         font-size: 32px;
     }
     #nav-mid li {
-        margin-right: 2.5%!important;
+        margin-right: 5.7%!important;
     }
 
     #nav-mid img {
@@ -369,8 +364,6 @@
 
 
     .entrada #click-assine {
-        display: flex;
-        position: absolute;
         width: 100%!important;
         height: 100%!important;
     }
@@ -428,17 +421,14 @@
     
    
 
-
-
-
-
     footer {
-        font-size: 23px!important;
+        font-size: 16px!important;
         margin-top:0px;
+        text-align: center;
 
     }
     .footer-bottom {
-        font-size: 25px!important;
+        font-size: 14px!important;
     }
 
     .footer-social {
@@ -462,12 +452,12 @@
     }
 
     #nav-mid ul {
-        margin-left: 11%!important;
+        margin-left: 0.2%!important;
         font-size: 34px;
     }
 
     #nav-mid li {
-        margin-right: 6%!important;
+        margin-right: 8%!important;
     }
 
     #nav-mid img {
@@ -512,8 +502,6 @@
     }
 
     .entrada #click-assine {
-        display: flex;
-        position: absolute;
         width: 100%!important;
         height: 100%!important;
     }
@@ -581,11 +569,11 @@
 
 
     footer {
-        font-size: 23px!important;
+        font-size: 16px!important;
 
     }
     .footer-bottom {
-        font-size: 25px!important;
+        font-size: 14px!important;
     }
 
     .footer-social {
@@ -605,7 +593,7 @@
     }
 
     #nav-mid ul {
-        margin-left:11%!important;
+        margin-left:4%!important;
         font-size: 33px;
     }
     
@@ -742,11 +730,11 @@
     }
 
     footer {
-        font-size: 23px!important;
+        font-size: 21px!important;
 
     }
     .footer-bottom {
-        font-size: 25px!important;
+        font-size: 18px!important;
     }
 
     .footer-social {
@@ -766,7 +754,7 @@
         }
 
         #nav-mid ul {
-            margin-left:12.5%!important;
+            margin-left:6.5%!important;
             font-size: 36px;
         }
         #nav-mid img {
@@ -800,6 +788,7 @@
             width: 100%!important;
             height: 100%!important; 
             padding-top: 10%;
+            margin-top: 10%;
         
         }
 
@@ -968,6 +957,67 @@
 
 }
 
+@media screen and (min-width: 1366px) and (max-width: 1519px) {
+    #nav-mid ul {
+        font-size: 31px;
+       }
+    .banner-principal {
+        width: 100%;
+
+    }
+    
+    
+    .banner-principal .main-img img {
+    
+        width: 100%;
+    
+    }
+    
+    .display-container {
+        min-width: 700px;
+        left: 2vh;
+        top: 10vh;
+    
+    }
+    
+    .display-container img {
+        min-width: 148px;
+        min-height: 148px;
+        margin: 10px ;
+    }
+    
+    .banner-flutuante {
+        width: 100%;
+    }
+    
+    .banner-flutuante img {
+        width: 100%;
+
+    }
+    
+    .slider-container {
+        top: 2.5vh;
+        max-width: 330vh;
+        max-height: 240px;
+    }
+    
+    video {
+        max-width: 330vh;
+        max-height: 240px;
+    }
+    
+    footer {
+        margin-top: 18.1px;
+    }
+    .footer-logo img {
+        bottom: 1.8%;
+        left: 0.5%;
+    }
+    
+
+}
+
+
 @media screen and (min-width: 1520px) and (max-width: 1700px) {
 
 
@@ -1090,6 +1140,7 @@
 .banner-flutuante {
     width: 100%;
     height: 120px!important;
+    margin-bottom: 1.4%!important;
 }
 
 .banner-flutuante img {

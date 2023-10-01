@@ -74,7 +74,12 @@ const products = [
         price: 180.00,
         image: "../imagens/fone.png"
     },
-
+    {
+        name: "Headset Ultra-Confort Fire-Tech",
+        price: 430.00,
+        image: "../imagens/headsetred.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
 
     //lista de produtos
 
@@ -92,9 +97,15 @@ function displayProducts() {
         const productItem = document.createElement("div");
         productItem.classList.add("item");
 
+        const productLink = document.createElement("a");
+        productLink.href = "pagina-detalhes-produto.html";
+
         const productImage = document.createElement("img");
         productImage.src = product.image;
         productItem.appendChild(productImage);
+
+        productLink.appendChild(productImage);
+        productItem.appendChild(productLink);
 
         const productName = document.createElement("h3");
         productName.textContent = product.name;

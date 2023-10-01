@@ -25,7 +25,7 @@
             </div>
 
             <ul class="acesso">
-                <li><a href="../index.html">Início</a></li>
+                <li><a  href="../index.html">Início</a></li>
                 <li><a href="../paginas/loja-home.html">Produtos</a></li>
                 <li><a href="../paginas/contato.html">Contato</a></li>
                 <li><a href="../paginas/sobre.html">Sobre</a></li>
@@ -35,8 +35,7 @@
                             <div class="cart-list">Nenhum item no carrinho</div>
                             <div class="cart-info">Total: $0.00 (0 itens)</div>
                             <button class="clear-cart-button">Limpar</button>
-                            <button id="checkout-button" class="checkout-button">Pagamento</button>
-
+                            <button class="checkout-button" id="checkout-button">Comprar</button>
                         </li>  
                     </ul>
             </ul> 
@@ -50,42 +49,82 @@
             <ul class="submenu">
                 <li><input type="text" placeholder="Pesquisar"></li>
                 <li><a href="../paginas/loja-home.html">Todos</a></li>
-                <li><a href="../paginas/loja-acessorio.html">Acessórios</a></li>
+                <li><a style="text-transform: uppercase; text-decoration: underline;" href="../paginas/loja-acessorio.html">Acessórios</a></li>
                 <li><a href="../paginas/loja-mouse.html">Mouses</a></li>
                 <li><a href="../paginas/loja-harware.html">Hardware</a></li>
-                <li><a style="text-transform: uppercase; text-decoration: underline;" href="../paginas/loja-cadeira.html">Cadeiras</a></li>
+                <li><a href="../paginas/loja-cadeira.html">Cadeiras</a></li>
                 <li><a href="../paginas/loja-teclado.html">Teclados</a></li>
                 <li><a href="../paginas/loja-headset.html">Headset</a></li>
             </ul>
         </div>
 
         <div class="lista" style="margin-bottom: 0.5%; padding-bottom: 40vh;">
+            <div class="slides">
+            
+                <div class="slide">
+                        <img src="../imagens/vr.png" alt="Descubra os melhores periféricos, Otimize">
+                </div>
+                <div class="slide">
+                    <img src="../imagens/vr2.jpg" alt="Alcance seu máximo desempenho, Eleve suas possibilidades">
+                </div>
+                <div class="slide">
+                    <img src="../imagens/vr3.jpg" alt="Assine nossa newsletter">
+                </div>
+            
+                <a class="prev" onclick="nextSlides(-1)">&#10094;</a>
+                <a class="next" onclick="nextSlides(1)">&#10095;</a>
+            </div>
 
         </div>
         
     <script>
-        // função da loja
+ let slideIndex = 1;
+
+function showSlides(n) {
+    let slides = document.querySelectorAll(".slide");
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    let video = slides[slideIndex - 1].querySelector("video");
+    if (video) {
+        video.play();
+    }
+}
+
+function nextSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
+document.querySelector(".prev").addEventListener("click", () => {
+    nextSlides(-1);
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+    nextSlides(1);
+});
+
 
 const products = [
 
-{
-        name: "Cadeira Fire-Tech",
-        price: 900.00,
-        image: "../imagens/cadeira.png"
-    },
     {
-        name: "Cadeira Gamer Azul Fire-Tech",
-        price: 1220.00,
-        image: "../imagens/cadeiraazul.png",
-        productDetailLink: "pagina-detalhes-produto1.html"
+        name: "Óculos VR Fire-tech",
+        price: 220.00,
     },
+    
 
 
-    //lista de produtos
-
-    // Precisa arrumar o Total do carrinho para R$
-    //itens do varrinho - tirar o R
-    // tirar o R do nome dos itens
     // arrumar preço a receber dos itens
 
 ];
@@ -97,22 +136,17 @@ function displayProducts() {
         const productItem = document.createElement("div");
         productItem.classList.add("item");
 
-        const productLink = document.createElement("a");
-        productLink.href = "pagina-detalhes-produto.html";
 
-        const productImage = document.createElement("img");
-        productImage.src = product.image;
-        productItem.appendChild(productImage);
+        productList.appendChild(productItem);
 
-        productLink.appendChild(productImage);
-        productItem.appendChild(productLink);
+
 
         const productName = document.createElement("h3");
         productName.textContent = product.name;
         productItem.appendChild(productName);
 
         const productPrice = document.createElement("p");
-        productPrice.textContent = `Preço: R$${product.price.toFixed(2)}`;
+        productPrice.textContent = `Preço: R$ ${product.price.toFixed(2)}`;
         productItem.appendChild(productPrice);
 
         const addToCartButton = document.createElement("button");
@@ -121,7 +155,17 @@ function displayProducts() {
         productItem.appendChild(addToCartButton);
 
         productList.appendChild(productItem);
+
+        const buyNowButton = document.createElement("button");
+        buyNowButton.textContent = "Comprar Agora";
+        buyNowButton.addEventListener("click", () => buyNow(product.price));
+        productItem.appendChild(buyNowButton);
     });
+}
+
+function buyNow(productPrice) {
+    const paymentPageURL = `../paginas/loja-pagamento.html?price=${productPrice}`;
+    window.location.href = paymentPageURL;
 }
 
 document.querySelectorAll(".item button").forEach((button, index) => {
@@ -141,14 +185,14 @@ function updateCartInfo() {
     const totalPrice = cart.reduce((total, product) => total + product.price, 0);
 
     const cartInfo = document.querySelector(".cart-info");
-    cartInfo.textContent = `Total: R$${totalPrice.toFixed(2)} (${cart.length} itens)`;
+    cartInfo.textContent = `Total: R$ ${totalPrice.toFixed(2)} (${cart.length} itens)`;
 
     const cartList = document.querySelector(".cart-list");
     cartList.innerHTML = "";
 
     cart.forEach((product) => {
         const cartItem = document.createElement("div");
-        cartItem.textContent = `${product.name} - R$${product.price.toFixed(2)}`;
+        cartItem.textContent = `${product.name} - R$ ${product.price.toFixed(2)}`;
         cartList.appendChild(cartItem);
     });
 }
@@ -165,7 +209,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const clearCartButton = document.querySelector(".clear-cart-button");
     clearCartButton.addEventListener("click", clearCart);
 });
-
 
 
 const checkoutButton = document.getElementById("checkout-button");
@@ -222,4 +265,3 @@ checkoutButton.addEventListener("click", () => {
     
 </body>
 </html>
-

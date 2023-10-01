@@ -9,7 +9,8 @@
 
     #nav-mid ul {
 
-    font-size: 40px;
+    font-size: 34px;
+    margin-right: -26%;
 
     }
 
@@ -29,7 +30,7 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .menu-lateral {
@@ -52,6 +53,21 @@
         top:-200px;
     }
 
+    #nav-mid ul {
+
+        font-size: 23px!important;
+        margin-right: -23%;
+    
+        }
+
+        #nav-mid ul li {
+
+            font-size: 33px!important;
+
+        
+            }
+
+
     .footer-logo img {
         display: none!important;
         bottom:2%;
@@ -71,7 +87,7 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .menu-lateral {
@@ -90,7 +106,11 @@
     
     #nav-mid ul {
         margin-left: 20%!important;
-        font-size: 30px;
+        font-size: 29px;
+    }
+
+    #nav-mid ul li {
+        font-size: 29px;
     }
 
     .main-loja {
@@ -116,7 +136,7 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
     }
 
 
@@ -215,13 +235,13 @@
         display: flex;
         position: relative;
         top: 400px;
-        left: 7%;
+        left: 11%;
     
     }
 
     .item {
 
-        width: 90%!important;
+        width: 150%!important;
         font-size: 24px;
     }
 
@@ -233,36 +253,47 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .menu-lateral {
         display: block;
         position: fixed!important;
-        height: 100%;
+        max-height: 100%;
+        width: 120px!important;
         padding-bottom:0px!important;
         text-align: center;
         margin-bottom:-67%;
         margin-top: 21%!important;
+
         
     }
 
     .cart {
         right:-10%!important;
         transform: scale(0.9);
-        top: 70px!important;
+        margin-top: -3%!important;
+    
     }
     .cart button {
-        font-size: 24px;
+        font-size: 20px;
         width: 150px;
     }
 
     footer {
         font-size: 24px;
     }
+
+    nav#nav-mid.nav-mid-loja  {
+        max-height: 10%!important;
+        font-size: 24px;
+        
+
+    }
+
     #nav-mid ul{
         margin-left:0px;
-        width:550px;
+        font-size: 24px;
         
 
     }
@@ -284,12 +315,12 @@
         display: flex;
         position: relative;
         top: 300px;
-        left: 9%;
+        left: 0.1%;
     }
 
     .item {
 
-        width: 90%!important;
+        width: 130%!important;
         font-size: 24px;
     }
 
@@ -301,13 +332,14 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .menu-lateral {
         display: block;
         position: fixed!important;
         height: 100%;
+        max-width: 120px;
         padding-bottom:0px!important;
         text-align: center;
         margin-bottom:-67%;
@@ -316,7 +348,7 @@
     }
 
     .cart {
-        right:-15%!important;
+        right:-12%!important;
         transform: scale(0.73);
 
     }
@@ -338,6 +370,7 @@
 
     #nav-mid li {
         margin-right:7%;
+        font-size: 25px;
     }
 }
 @media screen and (min-width: 700px) and (max-width:749px) {
@@ -351,7 +384,7 @@
     .lista {
         display: flex;
         position: relative;
-        left: 10%;
+        left: 3%;
         top:300px;
     }
 
@@ -373,13 +406,14 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .menu-lateral {
         display: block;
         position: fixed!important;
         height: 100%;
+        max-width: 120px;
         padding-bottom:0px!important;
         margin-top: 25%!important;
         text-align: center;
@@ -388,8 +422,9 @@
     }
 
     .cart {
-        right:-15%!important;
-        transform: scale(0.6);
+        right:-11%!important;
+        transform: scale(0.77);
+        margin-top: 20%!important;
     }
 
     .cart button {
@@ -399,21 +434,24 @@
     }
 
     footer {
-        font-size: 24px;
+        font-size: 19px;
     }
     #nav-mid ul{
-        margin-left:-10%;
+        margin-left:-2%;
         width:550px;
+        
         
 
     }
 
     #nav-mid li {
         margin-right:7%;
+        font-size: 28px;
+        margin-left: 5%;
     }
 
     .footer-bottom {
-        font-size: 23px!important;
+        font-size: 18px!important;
     }
 }
 @media screen and (min-width: 598px) and (max-width:699px) {
@@ -456,6 +494,7 @@
         display: block;
         position: fixed!important;
         height: 100%;
+        max-width: 120px;
         padding-bottom:0px!important;
         transform: scale(0.8);
         text-align: center;

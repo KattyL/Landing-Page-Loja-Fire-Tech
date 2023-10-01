@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este é o repositório para o projeto da minha Landing Page desenvolvida para a competição de Landing Pages.
+Este é o repositório para o projeto final Loja Virtual do Projeto #ElasNaTech.
 
 
 Usei como base para o responsivo as principais resoluções de amplo uso:

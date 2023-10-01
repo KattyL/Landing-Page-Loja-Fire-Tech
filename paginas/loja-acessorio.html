@@ -72,6 +72,12 @@ const products = [
         price: 220.00,
         image: "../imagens/vr.png" 
     },
+    {
+        name: "Volante e pedal Fire-Tech",
+        price: 420.00,
+        image: "../imagens/volante.png",
+        productDetailLink: "pagina-detalhes-produto1.html"
+    },
 
 
     // arrumar preço a receber dos itens
@@ -85,9 +91,15 @@ function displayProducts() {
         const productItem = document.createElement("div");
         productItem.classList.add("item");
 
+        const productLink = document.createElement("a");
+        productLink.href = "pagina-detalhes-produto.html";
+
         const productImage = document.createElement("img");
         productImage.src = product.image;
         productItem.appendChild(productImage);
+
+        productLink.appendChild(productImage);
+        productItem.appendChild(productLink);
 
         const productName = document.createElement("h3");
         productName.textContent = product.name;
