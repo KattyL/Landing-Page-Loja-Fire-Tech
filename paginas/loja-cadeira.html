@@ -25,22 +25,22 @@
             </div>
 
             <ul class="acesso">
-                <li><a href="../index.html">Início</a></li>
+                <li><a  href="../index.html">Início</a></li>
                 <li><a href="../paginas/loja-home.html">Produtos</a></li>
                 <li><a href="../paginas/contato.html">Contato</a></li>
                 <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li class="cartBut">
+                    Carrinho
                     <ul class="carrinho">
                         <li class="cart">
-                            <h2>Carrinho</h2>
                             <div class="cart-list">Nenhum item no carrinho</div>
                             <div class="cart-info">Total: $0.00 (0 itens)</div>
                             <button class="clear-cart-button">Limpar</button>
-                            <button id="checkout-button" class="checkout-button">Pagamento</button>
-
+                            <button class="checkout-button" id="checkout-button">Comprar</button>
                         </li>  
                     </ul>
+                </li>
             </ul> 
-
 
 
     </header>
@@ -64,6 +64,21 @@
         </div>
         
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.acesso > .cartBut');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            menuItems.forEach(function(otherItem) {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('menu-item-open');
+                }
+            });
+
+            item.classList.toggle('menu-item-open');
+        });
+    });
+});
         // função da loja
 
 const products = [
