@@ -126,6 +126,16 @@ a:hover {
     margin-top: 1.5%;
 }
 
+.carrinho {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item-open .carrinho {
+    display: block;
+}
+
 .cart {
     position: absolute;
     top: 0;
@@ -136,7 +146,10 @@ a:hover {
     padding: 20px;
     text-align: center;
     margin-top: 7.333%;
+    display: none;
 }
+
+
 
 .cart h2 {
     margin-bottom: 10px;
@@ -159,6 +172,8 @@ a:hover {
     margin-top: 20px;
     text-align: left;
 }
+
+
 
 footer {
     background-color: #333;

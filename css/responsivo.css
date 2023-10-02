@@ -316,7 +316,7 @@
 
     #nav-mid ul {
         font-size: 32px;
-        margin-left: -15%!important;
+        margin-left: -10%!important;
     }
     #nav-mid li {
         margin-right: 4.7%!important;
@@ -593,8 +593,12 @@
         
     }
 
+    #nav-mid {
+        padding: 80px!important;
+    }
+
     #nav-mid ul {
-        margin-left:4%!important;
+        margin-left:8%!important;
         font-size: 33px;
     }
     
@@ -622,7 +626,7 @@
         display: block!important; 
         width: 100%!important;
         height: 100%!important; 
-        padding-top: 26%!important;
+        padding-top: 20%!important;
 
     }
 
@@ -975,7 +979,7 @@
     }
     
     .display-container {
-        min-width: 700px;
+        min-width: 550px;
         left: 2vh;
         top: 10vh;
     

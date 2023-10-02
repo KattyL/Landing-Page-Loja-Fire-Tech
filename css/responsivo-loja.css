@@ -186,7 +186,7 @@
     .lista {
         display: flex;
         position: relative;
-        top: -260px;
+        top: -100px;
         left: 5%;
     }
 
@@ -203,7 +203,7 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 24px;
+        font-size: 17px;
     }
 
     .menu-lateral {
@@ -211,6 +211,7 @@
         margin-top: 9%!important;
         text-align: center;
         margin-bottom:-67%;
+        max-width: 170px;
         
     }
 
@@ -220,7 +221,7 @@
     }
 
     footer {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 780px) and (max-width:999px) {
@@ -253,7 +254,7 @@
     .submenu li {
         margin-bottom: 16%;
         text-align: center;
-        font-size: 14px;
+        font-size: 19px;
     }
 
     .menu-lateral {
@@ -285,7 +286,7 @@
     }
 
     nav#nav-mid.nav-mid-loja  {
-        max-height: 10%!important;
+        padding: 9%;
         font-size: 24px;
         
 
@@ -300,6 +301,7 @@
 
     #nav-mid li {
         margin-right:7%;
+        font-size: 30px!important;
     }
 }
 @media screen and (min-width: 750px) and (max-width:779px) {
@@ -314,8 +316,8 @@
     .lista {
         display: flex;
         position: relative;
-        top: 300px;
-        left: 0.1%;
+        top: 350px;
+        left: 13.1%;
     }
 
     .item {
@@ -349,7 +351,8 @@
 
     .cart {
         right:-12%!important;
-        transform: scale(0.73);
+        transform: scale(0.83);
+        margin-top: -2%!important;
 
     }
 
@@ -370,7 +373,7 @@
 
     #nav-mid li {
         margin-right:7%;
-        font-size: 25px;
+        font-size: 28px;
     }
 }
 @media screen and (min-width: 700px) and (max-width:749px) {
