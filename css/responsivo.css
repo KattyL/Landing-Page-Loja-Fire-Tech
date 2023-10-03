@@ -316,7 +316,7 @@
 
     #nav-mid ul {
         font-size: 32px;
-        margin-left: -8%!important;
+        margin-left: -13%!important;
     }
     #nav-mid li {
         margin-right: 4.7%!important;
@@ -943,11 +943,12 @@
 }
 
 @media screen and (min-width: 1270px) and (max-width: 1366px) {
+  
 
-    .main-img a {
-
-        margin-bottom:16.5vh;
-    }   
+    .main-img img {
+        width: 1286px!important;
+        
+    }
 
     .footer-logo img {
         right:0.1%;
