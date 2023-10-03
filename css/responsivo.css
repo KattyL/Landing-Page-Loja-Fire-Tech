@@ -316,7 +316,7 @@
 
     #nav-mid ul {
         font-size: 32px;
-        margin-left: -10%!important;
+        margin-left: -8%!important;
     }
     #nav-mid li {
         margin-right: 4.7%!important;
@@ -942,7 +942,7 @@
 
 }
 
-@media screen and (min-width: 1270px) and (max-width: 1365px) {
+@media screen and (min-width: 1270px) and (max-width: 1366px) {
 
     .main-img a {
 
@@ -962,7 +962,7 @@
 
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1519px) {
+@media screen and (min-width: 1367px) and (max-width: 1519px) {
     #nav-mid ul {
         font-size: 31px;
        }
@@ -1089,24 +1089,24 @@
     #video2{
         display: flex;
         position: absolute;
-        right: 800px;
+        right:550px!important;
     }
     
     #video3{
         display: flex;
         position: absolute;
-        right: 1332px;
+        right: 1032px;
     }
     
     .texto-video2  {
         display: flex;
         position: absolute;
-        right:183px;
+        right:0.1px;
     }
     .texto-video3  {
         display: flex;
         position: absolute;
-        right:786px;
+        right:486px;
     }
 }
 

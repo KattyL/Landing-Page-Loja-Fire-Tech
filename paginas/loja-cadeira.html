@@ -86,13 +86,14 @@ const products = [
 {
         name: "Cadeira Fire-Tech",
         price: 900.00,
-        image: "../imagens/cadeira.png"
+        image: "../imagens/cadeira.png",
+        productDetailLink: "item-cadeira-1.html"
     },
     {
         name: "Cadeira Gamer Azul Fire-Tech",
         price: 1220.00,
         image: "../imagens/cadeiraazul.png",
-        productDetailLink: "pagina-detalhes-produto1.html"
+        productDetailLink: "item-cadeira-2.html"
     },
 
 
@@ -113,7 +114,8 @@ function displayProducts() {
         productItem.classList.add("item");
 
         const productLink = document.createElement("a");
-        productLink.href = "pagina-detalhes-produto.html";
+        productLink.href = product.productDetailLink; 
+        productItem.appendChild(productLink);
 
         const productImage = document.createElement("img");
         productImage.src = product.image;

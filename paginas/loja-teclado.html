@@ -66,7 +66,7 @@
         
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    const menuItems = document.querySelectorAll('.acesso > .cartBut');
+    const menuItems = document.querySelectorAll('.cartBut');
 
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
@@ -87,13 +87,14 @@ const products = [
 {
         name: "Teclado Fire-tech",
         price: 220.00,
-        image: "../imagens/teclado.png" 
+        image: "../imagens/teclado.png",
+        productDetailLink: "item-teclado-1.html" 
     },
     {
         name: "Teclado RGBA Fire-Tech",
         price: 210.00,
         image: "../imagens/teclado (2).png",
-        productDetailLink: "pagina-detalhes-produto1.html"
+        productDetailLink: "item-teclado-2.html"
     },
 
 
@@ -111,7 +112,8 @@ function displayProducts() {
         productItem.classList.add("item");
 
         const productLink = document.createElement("a");
-        productLink.href = "pagina-detalhes-produto.html";
+        productLink.href = product.productDetailLink; 
+        productItem.appendChild(productLink);
 
         const productImage = document.createElement("img");
         productImage.src = product.image;

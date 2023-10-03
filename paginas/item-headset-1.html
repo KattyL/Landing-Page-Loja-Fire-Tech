@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire-Tech E-Commerce</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsivo-itens-un.css">
+    <link rel="stylesheet" href="../css/loja-home.css">
+    <link rel="stylesheet" href="../css/pop-up.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../imagens/blaze.png">
+    
+</head>
+<body>
+
+    <header>
+
+        <nav id="nav-mid" class="nav-mid-loja">
+            <div class="logo">
+                <img src="../imagens/blaze.png" alt="Blaze">
+                <div class="Fire-tech">
+                    <img src="../imagens/firetech-letra.png" alt="Fire-tech">
+                </div>
+            </div>
+
+            <ul class="acesso">
+                <li><a  href="../index.html">Início</a></li>
+                <li><a href="../paginas/loja-home.html">Produtos</a></li>
+                <li><a href="../paginas/contato.html">Contato</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li class="cartBut">
+                    Carrinho
+                    <ul class="carrinho">
+                        <li class="cart">
+                            <div class="cart-list">Nenhum item no carrinho</div>
+                            <div class="cart-info">Total: $0.00 (0 itens)</div>
+                            <button class="clear-cart-button">Limpar</button>
+                            <button class="checkout-button" id="checkout-button">Comprar</button>
+                        </li>  
+                    </ul>
+                </li>
+            </ul> 
+
+
+
+    </header>
+    <main class="main main-loja">
+        
+        <div class="menu-lateral">
+            <ul class="submenu">
+                <li><input type="text" placeholder="Pesquisar"></li>
+                <li><a href="../paginas/loja-home.html">Todos</a></li>
+                <li><a href="../paginas/loja-acessorio.html">Acessórios</a></li>
+                <li><a href="../paginas/loja-mouse.html">Mouses</a></li>
+                <li><a href="../paginas/loja-harware.html">Hardware</a></li>
+                <li><a href="../paginas/loja-cadeira.html">Cadeiras</a></li>
+                <li><a href="../paginas/loja-teclado.html">Teclados</a></li>
+                <li><a style="text-transform: uppercase; text-decoration: underline;" href="../paginas/loja-headset.html">Headset</a></li>
+            </ul>
+        </div>
+        
+        <div class="list-item-desc">
+            <h1>Headset Fire-Tech</h1>
+        <div class="lista" style="margin-bottom: 0.5%; padding-bottom: 40vh;">
+            <div class="slides">
+            
+                <div class="slide">
+                        <img src="../imagens/fone.png" alt="Descubra os melhores periféricos, Otimize">
+                </div>
+                <div class="slide">
+                    <img src="../imagens/headset2.webp" alt="Alcance seu máximo desempenho, Eleve suas possibilidades">
+                </div>
+                <div class="slide">
+                    <img src="../imagens/headset3.webp" alt="Assine nossa newsletter">
+                </div>
+            
+                <a class="prev" onclick="nextSlides(-1)">&#10094;</a>
+                <a class="next" onclick="nextSlides(1)">&#10095;</a>
+            </div>
+        </div>
+<div class="description">
+    <h2>Descrição:</h2>
+    <p>
+        O Headset Fire-Tech é a escolha definitiva para os verdadeiros entusiastas de áudio. Projetado para oferecer uma qualidade de som excepcional e conforto duradouro, este headset eleva sua experiência de jogo a novas alturas. Com drivers de alta fidelidade, cancelamento de ruído e um microfone cristalino, você mergulhará em um mundo de áudio imersivo. A construção robusta e o design ergonômico garantem durabilidade e conforto mesmo nas sessões de jogo mais longas. Prepare-se para ouvir cada detalhe e se comunicar com clareza, tudo com o Headset Fire-Tech.<br><br>
+        
+        <b>Destaques:</b><br><br>
+        
+        <b>Som Surround Imersivo:</b> Experimente o áudio dos jogos como nunca antes, com som surround que coloca você no centro da ação.<br><br>
+        <b>Cancelamento de Ruído:</b> Fique totalmente imerso no jogo, bloqueando distrações externas com o cancelamento de ruído integrado.<br><br>
+        <b>Microfone Flexível:</b> Comunique-se com seus companheiros de equipe de forma clara e nítida, graças ao microfone flexível e ajustável.<br><br>
+        <b>Conforto Duradouro:</b> As almofadas macias e a faixa de cabeça ajustável proporcionam conforto excepcional mesmo durante as longas sessões de jogo.<br><br>
+        <b>Compatibilidade Universal:</b> Funciona perfeitamente com PC, consoles e dispositivos móveis, oferecendo versatilidade para todos os jogadores.<br><br>
+        
+    </p>
+</div>
+</div>
+        
+        
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.acesso > .cartBut');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            menuItems.forEach(function(otherItem) {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('menu-item-open');
+                }
+            });
+
+            item.classList.toggle('menu-item-open');
+        });
+    });
+});
+
+window.addEventListener('load', function() {
+    
+
+ let slideIndex = 1;
+ showSlides(slideIndex);
+
+function showSlides(n) {
+    let slides = document.querySelectorAll(".slide");
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+}
+
+function nextSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
+document.querySelector(".prev").addEventListener("click", () => {
+    nextSlides(-1);
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+    nextSlides(1);
+});
+
+});
+
+
+
+const products = [
+
+    {
+        name: "Headset Fire-Tech",
+        price: 180.00,
+    },
+    
+
+
+    // arrumar preço a receber dos itens
+
+];
+
+
+function displayProducts() {
+    const productList = document.querySelector(".lista");
+
+    products.forEach((product, index) => {
+        const productItem = document.createElement("div");
+        productItem.classList.add("item");
+
+
+        productList.appendChild(productItem);
+
+
+
+        const productName = document.createElement("h3");
+        productName.textContent = product.name;
+        productItem.appendChild(productName);
+
+        const productPrice = document.createElement("p");
+        productPrice.textContent = `Preço: R$ ${product.price.toFixed(2)}`;
+        productItem.appendChild(productPrice);
+
+        const addToCartButton = document.createElement("button");
+        addToCartButton.textContent = "Adicionar ao Carrinho";
+        addToCartButton.addEventListener("click", () => addToCart(index));
+        productItem.appendChild(addToCartButton);
+
+        productList.appendChild(productItem);
+
+        const buyNowButton = document.createElement("button");
+        buyNowButton.textContent = "Comprar Agora";
+        buyNowButton.addEventListener("click", () => buyNow(product.price));
+        productItem.appendChild(buyNowButton);
+    });
+}
+
+function buyNow(productPrice) {
+    const paymentPageURL = `../paginas/loja-pagamento.html?price=${productPrice}`;
+    window.location.href = paymentPageURL;
+}
+
+document.querySelectorAll(".item button").forEach((button, index) => {
+    button.addEventListener("click", () => addToCart(index));
+});
+
+
+function addToCart(productIndex) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(products[productIndex]);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartInfo();
+}
+
+function updateCartInfo() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalPrice = cart.reduce((total, product) => total + product.price, 0);
+
+    const cartInfo = document.querySelector(".cart-info");
+    cartInfo.textContent = `Total: R$ ${totalPrice.toFixed(2)} (${cart.length} itens)`;
+
+    const cartList = document.querySelector(".cart-list");
+    cartList.innerHTML = "";
+
+    cart.forEach((product) => {
+        const cartItem = document.createElement("div");
+        cartItem.textContent = `${product.name} - R$ ${product.price.toFixed(2)}`;
+        cartList.appendChild(cartItem);
+    });
+}
+
+function clearCart() {
+    localStorage.removeItem("cart");
+    updateCartInfo();
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    displayProducts();
+    updateCartInfo();
+
+    const clearCartButton = document.querySelector(".clear-cart-button");
+    clearCartButton.addEventListener("click", clearCart);
+});
+
+
+const checkoutButton = document.getElementById("checkout-button");
+
+checkoutButton.addEventListener("click", () => {
+    const paymentPageURL = "../paginas/loja-pagamento.html";
+
+    const popupWidth = 800;
+    const popupHeight = 600;
+    const left = (window.innerWidth - popupWidth) / 2;
+    const top = (window.innerHeight - popupHeight) / 2;
+
+    window.open(paymentPageURL, "Pagamento", `width=${popupWidth}, height=${popupHeight}, left=${left}, top=${top}`);
+});
+
+
+    </script>
+    </main>
+    
+    
+    
+    
+
+    <footer>
+        <div class="footer-container">
+ 
+            <div class="footer-social">
+                <ul>
+                    <li><img src="../imagens/facebook.png" alt="Facebook"><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001590%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwjOunBhB4EiwA94JWsDUAKF20HnQapnOXk8gQlbK4SRLOCM8SV9t2fOZXX-e8MuKiuw0KrBoCJ48QAvD_BwE"><i class="facebook"></i> Facebook</a></li>
+                    <li><img src="../imagens/twitter.png" alt="Twitter"><a href="https://twitter.com/?lang=en"><i class="twitter"></i> Twitter</a></li>
+                    <li><img src="../imagens/instagram.png" alt="Instagram"><a href="https://www.instagram.com/"><i class="instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>Endereço: Rua do Silício, 10 - Techlândia</p>
+                <p>Telefone: (34) 99888-1900</p>
+                <p>Email: katturync@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="../paginas/loja-home.html">Produtos</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../paginas/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="../imagens/blaze.png" alt="Fire Tech">
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FireTech E-commerce. Todos os direitos fictícios reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

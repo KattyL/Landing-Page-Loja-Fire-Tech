@@ -87,13 +87,14 @@ const products = [
 {
         name: "Mouse Fire-tech",
         price: 180.00,
-        image: "../imagens/mouse.png" 
+        image: "../imagens/mouse.png" ,
+        productDetailLink: "item-mouse-blue.html"
     },
     {
         name: "Mouse Gamer Fire-Tech",
         price: 220.00,
         image: "../imagens/mouselaranja.png",
-        productDetailLink: "pagina-detalhes-produto1.html"
+        productDetailLink: "item-mouse-red.html"
     },
 
 
@@ -114,7 +115,8 @@ function displayProducts() {
         productItem.classList.add("item");
 
         const productLink = document.createElement("a");
-        productLink.href = "pagina-detalhes-produto.html";
+        productLink.href = product.productDetailLink; 
+        productItem.appendChild(productLink);
 
         const productImage = document.createElement("img");
         productImage.src = product.image;

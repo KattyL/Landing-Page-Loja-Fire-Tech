@@ -89,13 +89,14 @@ const products = [
     {
         name: "Óculos VR Fire-tech",
         price: 220.00,
-        image: "../imagens/vr.png" 
+        image: "../imagens/vr.png", 
+        productDetailLink: "item-acessorio-vr.html"
     },
     {
         name: "Volante e pedal Fire-Tech",
         price: 420.00,
         image: "../imagens/volante.png",
-        productDetailLink: "pagina-detalhes-produto1.html"
+        productDetailLink: "item-acessorio-volante.html"
     },
 
 
@@ -111,7 +112,8 @@ function displayProducts() {
         productItem.classList.add("item");
 
         const productLink = document.createElement("a");
-        productLink.href = "pagina-detalhes-produto.html";
+        productLink.href = product.productDetailLink; 
+        productItem.appendChild(productLink);
 
         const productImage = document.createElement("img");
         productImage.src = product.image;
