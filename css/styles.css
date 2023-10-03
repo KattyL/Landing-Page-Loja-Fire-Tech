@@ -56,7 +56,6 @@ header {
     list-style-type: none;
     top: 3vh;
     z-index: 100;
-    transition: top 0.6ms;
     font-family: Teko;
     font-weight: 200;
     font-size: 4vh;
