@@ -85,7 +85,7 @@
 const products = [
 
 {
-        name: "Headset Fire-Tech",
+        name: "Headset Basic Line Fire-Tech",
         price: 180.00,
         image: "../imagens/fone.png",
         productDetailLink: "item-headset-1.html"
@@ -137,9 +137,20 @@ function displayProducts() {
         addToCartButton.addEventListener("click", () => addToCart(index));
         productItem.appendChild(addToCartButton);
 
+        const buyNowButton = document.createElement("button");
+        buyNowButton.textContent = "Comprar Agora";
+        buyNowButton.addEventListener("click", () => buyNow(product.price));
+        productItem.appendChild(buyNowButton);
+
         productList.appendChild(productItem);
     });
 }
+
+        function buyNow(productPrice) {
+        const paymentPageURL = `../paginas/loja-pagamento.html?price=${productPrice}`;
+        window.location.href = paymentPageURL;
+}
+
 
 document.querySelectorAll(".item button").forEach((button, index) => {
     button.addEventListener("click", () => addToCart(index));

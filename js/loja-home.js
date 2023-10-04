@@ -2,62 +2,62 @@
 
 const products = [
     {
-        name: "Cadeira Fire-Tech",
+        name: "Cadeira Gamer Laranja Fire-Tech",
         price: 900.00,
         image: "../imagens/cadeira.png",
         productDetailLink: "item-cadeira-1.html"
     },
     {
-        name: "Headset Fire-Tech",
+        name: "Headset Basic Line Fire-Tech",
         price: 180.00,
         image: "../imagens/fone.png",
         productDetailLink: "item-headset-1.html"
     },
     {
-        name: "Teclado Fire-tech",
+        name: "Teclado Ergonômico Fire-tech",
         price: 220.00,
         image: "../imagens/teclado.png", 
         productDetailLink: "item-teclado-1.html"
     },
     {
-        name: "Mouse Fire-tech",
+        name: "Mouse Gamer Azul Fire-tech",
         price: 180.00,
         image: "../imagens/mouse.png",
         productDetailLink: "item-mouse-blue.html"
     },
     {
-        name: "PC Gamer Fire-tech",
+        name: "PC Gamer XY-1355 Fire-tech",
         price: 2220.00,
         image: "../imagens/cpu.png",
         productDetailLink: "item-hardware-1.html"
     },
     {
-        name: "Óculos VR Fire-tech",
+        name: "Óculos VR High-Definition Fire-tech",
         price: 220.00,
         image: "../imagens/vr.png",
         productDetailLink: "item-acessorio-vr.html"
     },
     {
-        name: "PC Gamer RGBA Fire-Tech",
+        name: "PC Gamer XT-3040 Fire-Tech",
         price: 3320.00,
         image: "../imagens/pcrgba.png",
         productDetailLink: "item-hardware-2.html"
     },
     {
-        name: "Volante e pedal Fire-Tech",
+        name: "Volante e pedal USB Fire-Tech",
         price: 420.00,
         image: "../imagens/volante.png",
         productDetailLink: "item-acessorio-volante.html"
     },
     {
-        name: "Mouse Gamer Fire-Tech",
+        name: "Mouse Gamer RGB Fire-Tech",
         price: 220.00,
         image: "../imagens/mouselaranja.png",
         productDetailLink: "item-teclado-red.html"
     },
     {
-        name: "Teclado RGBA Fire-Tech",
-        price: 210.00,
+        name: "Teclado RGBA Basic Fire-Tech",
+        price: 190.00,
         image: "../imagens/teclado (2).png",
         productDetailLink: "item-teclado-2.html"
     },
@@ -113,15 +113,23 @@ function displayProducts() {
         addToCartButton.addEventListener("click", () => addToCart(index));
         productItem.appendChild(addToCartButton);
 
+        const buyNowButton = document.createElement("button");
+        buyNowButton.textContent = "Comprar Agora";
+        buyNowButton.addEventListener("click", () => buyNow(product.price));
+        productItem.appendChild(buyNowButton);
+
         productList.appendChild(productItem);
     });
+}
+function buyNow(productPrice) {
+    const paymentPageURL = `../paginas/loja-pagamento.html?price=${productPrice}`;
+    window.location.href = paymentPageURL;
 }
 
 document.querySelectorAll(".item button").forEach((button, index) => {
     button.addEventListener("click", () => addToCart(index));
-
-
 });
+
 
 const productLinks = document.querySelectorAll(".item a[data-product-link]");
 productLinks.forEach((link) => {
@@ -188,4 +196,4 @@ checkoutButton.addEventListener("click", () => {
     window.open(paymentPageURL, "Pagamento", `width=${popupWidth}, height=${popupHeight}, left=${left}, top=${top}`);
 });
 
-///encontrar uma forma de aplicar Valor do carrinho à página de pagamento
+///encontrar uma forma de aplicar Valor do produto à página de pagamento

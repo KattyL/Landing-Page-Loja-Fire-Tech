@@ -124,11 +124,30 @@ a:hover {
 }
 
 .item button {
-    background-color: #55cc5d;
     color: #0c0c0c;
     padding: 5px;
     cursor: pointer;
     margin-top: 1.5%;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.item > button:first-of-type {
+
+    background-color: rgb(224, 206, 39);
+    min-width: 83%;
+}
+
+.item button:nth-of-type(2) {
+    background-color: rgb(224, 136, 35);
+    min-width: 83%;
+}   
+.item > button:first-of-type:hover {
+    background-color: rgb(224, 211, 90);
+}
+
+.item button:nth-of-type(2):hover {
+    background-color: rgb(221, 161, 92);
 }
 
 .carrinho {

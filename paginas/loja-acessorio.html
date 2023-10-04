@@ -87,13 +87,13 @@ document.addEventListener('DOMContentLoaded', function() {
 const products = [
 
     {
-        name: "Óculos VR Fire-tech",
+        name: "Óculos VR High-Definition Fire-tech",
         price: 220.00,
         image: "../imagens/vr.png", 
         productDetailLink: "item-acessorio-vr.html"
     },
     {
-        name: "Volante e pedal Fire-Tech",
+        name: "Volante e pedal USB Fire-Tech",
         price: 420.00,
         image: "../imagens/volante.png",
         productDetailLink: "item-acessorio-volante.html"
@@ -135,9 +135,20 @@ function displayProducts() {
         addToCartButton.addEventListener("click", () => addToCart(index));
         productItem.appendChild(addToCartButton);
 
+        const buyNowButton = document.createElement("button");
+        buyNowButton.textContent = "Comprar Agora";
+        buyNowButton.addEventListener("click", () => buyNow(product.price));
+        productItem.appendChild(buyNowButton);
+
         productList.appendChild(productItem);
     });
 }
+
+        function buyNow(productPrice) {
+        const paymentPageURL = `../paginas/loja-pagamento.html?price=${productPrice}`;
+        window.location.href = paymentPageURL;
+}
+
 
 document.querySelectorAll(".item button").forEach((button, index) => {
     button.addEventListener("click", () => addToCart(index));
