@@ -910,6 +910,9 @@
 }
 @media screen and (min-width: 400px) and (max-width:597px) {
 
+    pre {
+        margin:10%!important;
+    }
     .main-contato {
         margin:0!important;
         padding: 0!important;
@@ -936,7 +939,7 @@
         margin:0!important;
     }
     .sobre-texto {
-        padding-top: 10%!important;
+        padding-top: 15%!important;
         padding-left: 0;
         padding-right: 0;
        }
@@ -964,7 +967,7 @@
         font-size: 20px!important;
     }
     #nav-mid li {
-        margin-left:4%;
+        margin-left:7%;
     }
 
     .cart {
@@ -1036,6 +1039,10 @@
     }   
 }
 @media screen and (min-width: 300px) and (max-width:399px) {
+
+    pre {
+        margin:2%;
+    }
     .main-contato {
         margin:0!important;
         padding: 0!important;
