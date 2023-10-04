@@ -2,6 +2,32 @@
 
 @media screen and (min-width: 1620px) and (max-width:1950px) {
 
+    .maps iframe {
+        width: 600px!important;
+        height: 600px!important;
+        margin-left: -20%!important;
+        margin-bottom: -590px!important;
+        padding-bottom:400px ;
+    } 
+
+    .maps {
+        margin-bottom: 200px;
+        
+    }
+    .form-container {
+        margin-top: 50px!important;
+        
+        
+    }
+
+    .contato-container {
+
+        margin-bottom: 180px;
+    }
+
+    .main-contato {
+        padding-bottom:100px!important;
+    }
     .main-loja {
         margin-top: -4%!important;
         padding-bottom: 6%!important;
@@ -132,6 +158,33 @@
     .footer-social {
         margin-left: -4%!important;
     }
+    .maps iframe {
+        width: 600px!important;
+        height: 600px!important;
+        margin-left: -20%!important;
+        margin-bottom: -590px!important;
+        padding-bottom:400px ;
+    } 
+
+    .maps {
+        margin-bottom: 200px;
+        
+    }
+    .form-container {
+        margin-top: 70px!important;
+        
+        
+    }
+
+    .contato-container {
+
+        margin-bottom: 180px;
+    }
+
+    .main-contato {
+        padding-bottom:100px!important;
+    }
+
 }
 
 @media screen and (min-width: 1283px) and (max-width:1366px) {
@@ -240,6 +293,10 @@
 
 @media screen and (min-width: 1257px) and (max-width:1282px) {
 
+    .form-container {
+        margin-top: 60px!important;
+        
+    }
     .main-loja {
         padding-bottom: 6%!important;
         margin-top: 1%!important;
@@ -306,6 +363,17 @@
     .footer-social {
         margin-left: -4%!important;
     }
+
+    .main-contato {
+        padding-bottom: 200px ;
+    }
+    .maps iframe {
+        width: 600px!important;
+        height: 600px!important;
+        margin-left: -20%!important;
+        margin-bottom: -590px!important;
+        padding-bottom:400px ;
+    } 
 }
 
     
@@ -416,6 +484,13 @@
     .footer-social {
         margin-left: -5%!important;
     }
+    .maps iframe {
+        width: 600px!important;
+        height: 600px!important;
+        margin-left: -20%!important;
+        margin-bottom: -670px!important;
+        padding-bottom:400px ;
+    } 
 }
 @media screen and (min-width: 780px) and (max-width:999px) {
     input {
@@ -533,6 +608,13 @@
     .footer-social {
         margin-left: -5%!important;
     }
+    .maps iframe {
+        width: 600px!important;
+        height: 600px!important;
+        margin-left: -80%!important;
+        margin-bottom: -770px!important;
+        padding-bottom:500px ;
+    } 
 }
 @media screen and (min-width: 750px) and (max-width:779px) {
     
@@ -659,6 +741,11 @@
     .footer-social {
         margin-left: -5%!important;
     }
+    .maps iframe {
+        width: 710px!important;
+        height: 700px!important;
+        margin-left: -60%!important;
+    } 
 }
 @media screen and (min-width: 700px) and (max-width:749px) {
     input {
@@ -781,6 +868,11 @@
     .footer-bottom {
         font-size: 16px;
     }
+    .maps iframe {
+        width: 670px!important;
+        height: 680px!important;
+        margin-left: -60%!important;
+    } 
 }
 @media screen and (min-width: 598px) and (max-width:699px) {
 
@@ -910,6 +1002,11 @@
     .footer-bottom {
         font-size: 16px;
     }
+    .maps iframe {
+        width: 560px!important;
+        height: 560px!important;
+        margin-left: -60%!important;
+    } 
 }
 @media screen and (min-width: 400px) and (max-width:597px) {
 
@@ -1041,13 +1138,23 @@
 
     .footer-bottom {
         font-size: 13px;
-    }   
+    } 
+    .maps iframe {
+        width: 386px!important;
+        height: 386px!important;
+        margin-left: -60%!important;
+    }  
 }
 @media screen and (min-width: 300px) and (max-width:399px) {
 
+    .maps iframe {
+        width: 300px!important;
+        height: 300px!important;
+        margin-left: -60%!important;
+    }
     pre {
-        margin:2%;
-        font-size: 18px!important;
+        margin:2%!important ;
+        font-size: 16px!important;
     }
     .main-contato {
         margin:0!important;
